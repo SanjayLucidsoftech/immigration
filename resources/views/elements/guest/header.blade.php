@@ -17,7 +17,18 @@
                   @if (Route::has('login'))
 
                           @auth
-                            <li><a href="{{ url('/home') }}">Home</a></li>
+                            <li><a href="{{ url('/home') }}">{{ Auth::user()->first_name }}</a></li>
+                            <li>
+                                <a href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
                           @else
                             <li><a href="{{ route('login') }}">Log In</a></li>
                             <li><a href="{{ route('register') }}">Registration</a></li>
@@ -34,13 +45,16 @@
 <!-- BEGIN HEADER -->
 <div class="header">
   <div class="container">
-    <a class="site-logo" href="{{ url('/') }}"><img src={{ asset('sb_theme/assets/frontend/layout/img/logos/logo-corp-red.png') }} alt="Metronic FrontEnd"></a>
+    <a class="site-logo" href="{{ url('/') }}">
+      {{-- <img src={{ asset('sb_theme/assets/frontend/layout/img/logos/logo-corp-red.png') }} alt="Metronic FrontEnd"> --}} <h3><strong>C-Logo..</strong></h3>
+    </a>
 
     <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
     <!-- BEGIN NAVIGATION -->
     <div class="header-navigation pull-left font-transform-inherit">
-      <ul>
+      @php
+      /*<ul>
         <li><a class="dropdown-toggle" href="{{ url('/') }}">Home</a></li>
         <li><a class="dropdown-toggle" href="{{ url('/introduction') }}">Introduction</a></li>
         <li><a class="dropdown-toggle" href="{{ url('/features') }}">Features</a></li>
@@ -48,8 +62,7 @@
 
 
 
-        @php
-        /*
+
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
             Pages
@@ -203,12 +216,12 @@
             </form>
           </div>
         </li>
-        */
-        @endphp
+
 
 
         <!-- END TOP SEARCH -->
-      </ul>
+      </ul>*/
+      @endphp
     </div>
     <!-- END NAVIGATION -->
   </div>

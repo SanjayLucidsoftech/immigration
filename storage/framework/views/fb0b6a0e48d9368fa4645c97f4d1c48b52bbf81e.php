@@ -17,7 +17,19 @@
                   <?php if(Route::has('login')): ?>
 
                           <?php if(auth()->guard()->check()): ?>
-                            <li><a href="<?php echo e(url('/home')); ?>">Home</a></li>
+                            <li><a href="<?php echo e(url('/home')); ?>"><?php echo e(Auth::user()->first_name); ?></a></li>
+                            <li>
+                                <a href="<?php echo e(route('logout')); ?>"
+                                    onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+
+                                <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
+                                    <?php echo e(csrf_field()); ?>
+
+                                </form>
+                            </li>
                           <?php else: ?>
                             <li><a href="<?php echo e(route('login')); ?>">Log In</a></li>
                             <li><a href="<?php echo e(route('register')); ?>">Registration</a></li>
@@ -34,22 +46,24 @@
 <!-- BEGIN HEADER -->
 <div class="header">
   <div class="container">
-    <a class="site-logo" href="<?php echo e(url('/')); ?>"><img src=<?php echo e(asset('sb_theme/assets/frontend/layout/img/logos/logo-corp-red.png')); ?> alt="Metronic FrontEnd"></a>
+    <a class="site-logo" href="<?php echo e(url('/')); ?>">
+       <h3><strong>C-Logo..</strong></h3>
+    </a>
 
     <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
     <!-- BEGIN NAVIGATION -->
     <div class="header-navigation pull-left font-transform-inherit">
-      <ul>
-        <li><a class="dropdown-toggle" href="<?php echo e(url('/')); ?>">Home</a></li>
-        <li><a class="dropdown-toggle" href="<?php echo e(url('/introduction')); ?>">Introduction</a></li>
-        <li><a class="dropdown-toggle" href="<?php echo e(url('/features')); ?>">Features</a></li>
-        <li><a class="dropdown-toggle" href="<?php echo e(url('/prices')); ?>">Prices</a></li>
+      <?php
+      /*<ul>
+        <li><a class="dropdown-toggle" href="{{ url('/') }}">Home</a></li>
+        <li><a class="dropdown-toggle" href="{{ url('/introduction') }}">Introduction</a></li>
+        <li><a class="dropdown-toggle" href="{{ url('/features') }}">Features</a></li>
+        <li><a class="dropdown-toggle" href="{{ url('/prices') }}">Prices</a></li>
 
 
 
-        <?php
-        /*
+
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
             Pages
@@ -203,12 +217,12 @@
             </form>
           </div>
         </li>
-        */
-        ?>
+
 
 
         <!-- END TOP SEARCH -->
-      </ul>
+      </ul>*/
+      ?>
     </div>
     <!-- END NAVIGATION -->
   </div>
