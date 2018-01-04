@@ -36,7 +36,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('guest:admin');
     }
 
     /**
@@ -68,11 +68,6 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
-    public function showRegistrationForm()
-    {
-        return view('admin.register');
-    }
-
     public function showRegistrationForm()
     {
         return view('admin.register');

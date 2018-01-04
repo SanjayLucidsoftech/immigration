@@ -26,7 +26,7 @@ trait AuthenticatesUsers
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Http\JsonResponse
      */
-    public function login(Request $request) 
+    public function login(Request $request)
     {
         $this->validateLogin($request);
 
