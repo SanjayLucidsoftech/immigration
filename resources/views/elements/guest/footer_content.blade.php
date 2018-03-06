@@ -40,8 +40,8 @@
           N1-503, Eros Sampoornam, Grater Noida West<br>
           Uttar Pradesh, India<br>
           Phone: 7838289073<br>
-          Email: <a href="mailto:info@sourcebow.com">info@sourcebow.com</a><br>
-          Skype: <a href="skype:sourcebow">sourcebow</a>
+          Email: <a href="mailto:info@LucidSoftech.com">info@LucidSoftech.com</a><br>
+          Skype: <a href="skype:LucidSoftech">LucidSoftech</a>
         </address>
 
         <div class="pre-footer-subscribe-box pre-footer-subscribe-box-vertical">

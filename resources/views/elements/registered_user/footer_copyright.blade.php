@@ -1,6 +1,6 @@
 <div class="page-footer">
 	<div class="page-footer-inner">
-		 2018 &copy; HRManager by SourceBow.
+		 2018 &copy; Immigration by LucidSoftech.
 	</div>
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>
