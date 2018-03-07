@@ -27,10 +27,13 @@ Route::get('/prices', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/settings/company/general', 'settings\CompSettingController@general')->name('settings.general');
+
+
 
 
 //Route::get('/admin/home', 'AdminController@index')->name('admin.home');
-Route::get('/admin/home', 'AdminController@index');
+Route::get('/admin/home', 'AdminController@index')->name('admin.home');;
 Route::get('admin','Admin\LoginController@showLoginForm')->name('admin.login');
 Route::post('admin','Admin\LoginController@login');
 //Route::post('logout','Admin\LoginController@logout')->name('admin.logout');;
@@ -40,3 +43,15 @@ Route::post('/admin-password/reset','Admin\ResetPasswordController@reset');
 Route::get('/admin-password/reset/{token}','Admin\ResetPasswordController@showResetForm')->name('admin.password.reset');
 Route::get('/admin-register','Admin\RegisterController@showRegistrationForm')->name('admin.register');
 Route::post('/admin-register','Admin\RegisterController@register');
+Route::get('/admin/users', 'Admin\UserController@index')->name('admin.user.user');
+
+//  Route::get('/admin/settings/web/general', function () {
+//     //  $placa = General::classActivePath('admin.home');
+//     //  $General = new General;
+//     // echo  $General->classActivePath('admin.home');
+//     echo "Here..";
+// });
+
+/* Admin  routs started ************************/
+Route::get('/admin/settings/web/general', 'Admin\settings\WebSettingController@general')->name('admin.settings.general');
+/* Admin  routs End  ************************/

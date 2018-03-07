@@ -1,17 +1,17 @@
-<div class="hor-menu hidden-sm hidden-xs">
+{{-- <div class="hor-menu hidden-sm hidden-xs">
   <ul class="nav navbar-nav">
     <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
-    <li class="classic-menu-dropdown active">
-      <a href="index.html">
-      Dashboard <span class="selected">
+    <li class="classic-menu-dropdown {{{ (General::classActivePath('admin.home') ? 'active' : '') }}}">
+      <a href="/admin">
+      Dashboard <span class="{{{ (General::classActivePath('admin.home') ? 'selected' : '') }}}">
       </span>
       </a>
     </li>
-    <li class="mega-menu-dropdown">
+  <li class="mega-menu-dropdown">
       <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle" data-hover="megamenu-dropdown" data-close-others="true">
-      Mega <i class="fa fa-angle-down"></i>
+      Manage Users <i class="fa fa-angle-down"></i>
       </a>
-      <ul class="dropdown-menu" style="min-width: 700px;">
+       <ul class="dropdown-menu" style="min-width: 700px;">
         <li>
           <!-- Content container to add padding -->
           <div class="mega-menu-content">
@@ -122,6 +122,27 @@
         </li>
       </ul>
     </li>
+
+    <li class="classic-menu-dropdown {{{ (General::classActivePath('admin.users') ? 'active' : '') }}}">
+      <a href="/admin/users">
+      Manage Users <span class="{{{ (General::classActivePath('admin.users') ? 'selected' : '') }}}">
+      </span>
+      </a>
+    </li>
+
+
+    <li class="mega-menu-dropdown">
+      <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle" data-hover="megamenu-dropdown" data-close-others="true">
+      Manage Masters
+      </a>
+    </li>
+
+    <li class="mega-menu-dropdown">
+      <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle" data-hover="megamenu-dropdown" data-close-others="true">
+      App Settings
+      </a>
+    </li>
+
     <li class="mega-menu-dropdown mega-menu-full">
       <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle" data-hover="megamenu-dropdown" data-close-others="true">
       Full Mega <i class="fa fa-angle-down"></i>
@@ -360,4 +381,4 @@
       </ul>
     </li>
   </ul>
-</div>
+</div> --}}

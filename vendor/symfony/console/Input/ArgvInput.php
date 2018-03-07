@@ -282,12 +282,18 @@ class ArgvInput extends Input
                 return false;
             }
             foreach ($values as $value) {
-                // Options with values:
-                //   For long options, test for '--option=' at beginning
-                //   For short options, test for '-o' at beginning
-                $leading = 0 === strpos($value, '--') ? $value.'=' : $value;
-                if ($token === $value || '' !== $leading && 0 === strpos($token, $leading)) {
+                if ($token === $value || 0 === strpos($token, $value.'=')) {
                     return true;
+                }
+
+                if (0 === strpos($token, '-') && 0 !== strpos($token, '--')) {
+                    $noValue = explode('=', $token);
+                    $token = $noValue[0];
+                    $searchableToken = str_replace('-', '', $token);
+                    $searchableValue = str_replace('-', '', $value);
+                    if ('' !== $searchableToken && '' !== $searchableValue && false !== strpos($searchableToken, $searchableValue)) {
+                        return true;
+                    }
                 }
             }
         }
@@ -310,15 +316,12 @@ class ArgvInput extends Input
             }
 
             foreach ($values as $value) {
-                if ($token === $value) {
+                if ($token === $value || 0 === strpos($token, $value.'=')) {
+                    if (false !== $pos = strpos($token, '=')) {
+                        return substr($token, $pos + 1);
+                    }
+
                     return array_shift($tokens);
-                }
-                // Options with values:
-                //   For long options, test for '--option=' at beginning
-                //   For short options, test for '-o' at beginning
-                $leading = 0 === strpos($value, '--') ? $value.'=' : $value;
-                if ('' !== $leading && 0 === strpos($token, $leading)) {
-                    return substr($token, strlen($leading));
                 }
             }
         }

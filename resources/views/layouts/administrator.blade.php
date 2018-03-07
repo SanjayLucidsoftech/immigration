@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>{{ config('app.name', 'LucidSoftech: HR Manager') }}</title>
+<title>{{ config('app.name', 'Sourcebow: HR Manager') }}</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="" name="description"/>
@@ -60,9 +60,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
 <!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
 <!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
-<body class="page-header-fixed page-quick-sidebar-over-content page-style-square">
+<body class="page-header-fixed page-quick-sidebar-over-content page-style-square page-container-bg-solid">
 <!-- BEGIN HEADER -->
-<div class="page-header navbar navbar-fixed-top">
+<div class="sb-admin page-header navbar navbar-fixed-top">
 	<!-- BEGIN HEADER INNER -->
 	@include('elements.administrator.header')
 	<!-- END HEADER INNER -->

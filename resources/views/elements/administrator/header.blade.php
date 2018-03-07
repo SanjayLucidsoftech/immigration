@@ -1,15 +1,22 @@
 <div class="page-header-inner">
   <!-- BEGIN LOGO -->
   <div class="page-logo">
-    <a href="index.html">
-    <img src={{ asset('sb_theme/assets/admin/layout/img/logo.png') }} alt="logo" class="logo-default"/>
+    <a href="{{ route('admin.home') }}">
+    <img src={{ asset('sb_theme/assets/sb_img/sb-logo_03-min.png') }} alt="logo" class="logo-default"/>
     </a>
+    {{--  <span class="text-logo">Company Logo..</span>  --}}
+    <div class="menu-toggler sidebar-toggler">
+                            <span></span>
+                        </div>
+
+
   </div>
+
   <!-- END LOGO -->
   <!-- BEGIN HORIZANTAL MENU -->
   <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
   <!-- DOC: This is desktop version of the horizontal menu. The mobile version is defined(duplicated) sidebar menu below. So the horizontal menu has 2 seperate versions -->
-  
+
 
   @include('elements.administrator.topmenu')
   <!-- END HORIZANTAL MENU -->

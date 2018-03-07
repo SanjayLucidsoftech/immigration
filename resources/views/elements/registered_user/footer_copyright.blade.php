@@ -1,6 +1,7 @@
+
 <div class="page-footer">
 	<div class="page-footer-inner">
-		 2018 &copy; Immigration by LucidSoftech.
+		 {{ date('Y') }} &copy; Lucidsoftech.com
 	</div>
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>
@@ -33,6 +34,7 @@
 <script src={{ asset('sb_theme/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js') }} type="text/javascript"></script>
 <script src={{ asset('sb_theme/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js') }} type="text/javascript"></script>
 <script src={{ asset('sb_theme/assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js') }} type="text/javascript"></script>
+
 <script src={{ asset('sb_theme/assets/global/plugins/flot/jquery.flot.min.js') }} type="text/javascript"></script>
 <script src={{ asset('sb_theme/assets/global/plugins/flot/jquery.flot.resize.min.js') }} type="text/javascript"></script>
 <script src={{ asset('sb_theme/assets/global/plugins/flot/jquery.flot.categories.min.js') }} type="text/javascript"></script>
@@ -41,8 +43,8 @@
 <script src={{ asset('sb_theme/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js') }} type="text/javascript"></script>
 <!-- IMPORTANT! fullcalendar depends on jquery-ui.min.js for drag & drop support -->
 <script src={{ asset('sb_theme/assets/global/plugins/fullcalendar/fullcalendar.min.js') }} type="text/javascript"></script>
-<script src={{ asset('sb_theme/assets/global/plugins/jquery-easypiechart/jquery.easypiechart.js') }} type="text/javascript"></script>
-<script src={{ asset('sb_theme/assets/global/plugins/jquery.sparkline.min.js') }} type="text/javascript"></script>--}}
+<script src={{ asset('sb_theme/assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js') }} type="text/javascript"></script>
+<script src={{ asset('sb_theme/assets/global/plugins/jquery.sparkline.min.js') }} type="text/javascript"></script> --}}
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src={{ asset('sb_theme/assets/global/scripts/metronic.js') }} type="text/javascript"></script>
@@ -54,17 +56,17 @@
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
 jQuery(document).ready(function() {
-   Metronic.init(); // init metronic core components
-   Layout.init(); // init current layout
-QuickSidebar.init(); // init quick sidebar
-Demo.init(); // init demo features // initlayout and core plugins
+   Metronic.init(); // init metronic core componets
+   Layout.init(); // init layout
+   QuickSidebar.init(); // init quick sidebar
+   Demo.init(); // init demo features
    Index.init();
+   Index.initDashboardDaterange();
    Index.initJQVMAP(); // init index page's custom scripts
    Index.initCalendar(); // init index page's custom scripts
    Index.initCharts(); // init index page's custom scripts
    Index.initChat();
    Index.initMiniCharts();
-   Index.initDashboardDaterange();
    Tasks.initDashboardWidget();
 });
 </script>

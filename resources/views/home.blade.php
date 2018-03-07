@@ -119,31 +119,48 @@
           			</div> --}}
           			<!-- END STYLE CUSTOMIZER -->
           			<!-- BEGIN PAGE HEADER-->
-          			<h3 class="page-title">
-          			Dashboard
-          			</h3>
-          			<div class="page-bar">
-          				<ul class="page-breadcrumb">
-          					{{-- <li>
-          						<i class="fa fa-home"></i>
-          						<a href="index.html">Home</a>
-          						<i class="fa fa-angle-right"></i>
-          					</li>
-          					<li>
-          						<a href="#">Page Layouts</a>
-          						<i class="fa fa-angle-right"></i>
-          					</li> --}}
-          					<li>
-                      <i class="fa fa-home"></i>
-          						<a href="#">Dashboard</a>
-          					</li>
-          				</ul>
-          				{{-- <div class="page-toolbar">
-          					<div id="dashboard-report-range" class="pull-right tooltips btn btn-fit-height grey-salt" data-placement="top" data-original-title="Change dashboard date range">
-          						<i class="icon-calendar"></i>&nbsp; <span class="thin uppercase visible-lg-inline-block"></span>&nbsp; <i class="fa fa-angle-down"></i>
-          					</div>
-          				</div> --}}
-          			</div>
+                <div class="page-bar">
+                  <div class="portlet-title tabbable-line">
+                    <ul class="nav nav-tabs">
+          											<li class="">
+          												<a href="#tab_1_1" data-toggle="tab" aria-expanded="false">
+          												System </a>
+          											</li>
+          											<li class="active">
+          												<a href="#tab_1_2" data-toggle="tab" aria-expanded="true">
+          												Activities </a>
+          											</li>
+          					</ul>
+                  </div>
+
+				{{--<div class="page-toolbar">
+
+
+					 <div class="btn-group">
+						<button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+						Actions <i class="fa fa-angle-down"></i>
+						</button>
+						<ul class="dropdown-menu pull-right" role="menu">
+							<li>
+								<a href="#">Action</a>
+							</li>
+							<li>
+								<a href="#">Another action</a>
+							</li>
+							<li>
+								<a href="#">Something else here</a>
+							</li>
+							<li class="divider">
+							</li>
+							<li>
+								<a href="#">Separated link</a>
+							</li>
+						</ul>
+				</div>
+      </div> --}}
+			</div>
+
+
           			<!-- END PAGE HEADER-->
 
           			<!-- BEGIN DASHBOARD STATS -->

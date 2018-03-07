@@ -35,7 +35,7 @@
           <span>Metronic - The Most Complete &amp; Popular Admin &amp; Frontend Theme</span>
         </div>
         <div class="col-md-3 text-right">
-          <a class="btn-transparent" href="http://www.LucidSoftech.com" target="_blank"><i class="fa fa-rocket margin-right-10"></i>Live Demo</a>
+          <a class="btn-transparent" href="http://www.sourcebow.com" target="_blank"><i class="fa fa-rocket margin-right-10"></i>Live Demo</a>
         </div>
       </div>
       <!-- END BLOCKQUOTE BLOCK -->

@@ -1,35 +1,24 @@
 <?php $__env->startSection('content'); ?>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Dashboard</div>
 
+                <div class="panel-body">
+                    <?php if(session('status')): ?>
+                        <div class="alert alert-success">
+                            <?php echo e(session('status')); ?>
 
-             <!-- BEGIN CONTENT -->
-          			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-          			 
-          			<!-- /.modal -->
-          			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-          			<!-- BEGIN STYLE CUSTOMIZER -->
-          			
-          			<!-- END STYLE CUSTOMIZER -->
-          			<!-- BEGIN PAGE HEADER-->
-          			<h3 class="page-title">
-          			Dashboard
-          			</h3>
-          			<div class="page-bar">
-          				<ul class="page-breadcrumb">
-          					
-          					<li>
-                      <i class="fa fa-home"></i>
-          						<a href="#">Dashboard</a>
-          					</li>
-          				</ul>
-          				
-          			</div>
-          			<!-- END PAGE HEADER-->
+                        </div>
+                    <?php endif; ?>
 
-          			<!-- BEGIN DASHBOARD STATS -->
-          			
-          			<!-- END DASHBOARD STATS -->
-
-          			
+                    You are logged in!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.registered_user', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

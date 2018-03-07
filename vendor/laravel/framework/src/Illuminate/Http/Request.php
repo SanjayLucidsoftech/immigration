@@ -22,7 +22,7 @@ class Request extends SymfonyRequest implements Arrayable, ArrayAccess
     /**
      * The decoded JSON content for the request.
      *
-     * @var \Symfony\Component\HttpFoundation\ParameterBag|null
+     * @var string
      */
     protected $json;
 
@@ -171,8 +171,8 @@ class Request extends SymfonyRequest implements Arrayable, ArrayAccess
     {
         $segments = explode('/', $this->decodedPath());
 
-        return array_values(array_filter($segments, function ($value) {
-            return $value !== '';
+        return array_values(array_filter($segments, function ($v) {
+            return $v !== '';
         }));
     }
 
@@ -314,7 +314,7 @@ class Request extends SymfonyRequest implements Arrayable, ArrayAccess
      *
      * @param  string  $key
      * @param  mixed   $default
-     * @return \Symfony\Component\HttpFoundation\ParameterBag|mixed
+     * @return mixed
      */
     public function json($key = null, $default = null)
     {
@@ -479,7 +479,7 @@ class Request extends SymfonyRequest implements Arrayable, ArrayAccess
     /**
      * Set the JSON payload for the request.
      *
-     * @param  \Symfony\Component\HttpFoundation\ParameterBag  $json
+     * @param  array  $json
      * @return $this
      */
     public function setJson($json)

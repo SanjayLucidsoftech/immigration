@@ -239,7 +239,7 @@
                              data-easing="easeOutExpo">
                              Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.
                         </div>
-                        <a class="caption lft slide_btn btn red slide_item_left" href="http://www.LucidSoftech.com" target="_blank"
+                        <a class="caption lft slide_btn btn red slide_item_left" href="http://www.sourcebow.com" target="_blank"
                              data-x="30"
                              data-y="300"
                              data-speed="400"

@@ -13,19 +13,18 @@ License: You must have a valid license purchased only from themeforest(the above
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html lang="en" class="no-js">
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>{{ config('app.name', 'LucidSoftech: HR Manager') }}</title>
+<title>{{ config('app.name', 'Sourcebow: HR Manager') }}</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="" name="description"/>
 <meta content="" name="author"/>
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all") }} rel="stylesheet" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
 <link href={{ asset('sb_theme/assets/global/plugins/font-awesome/css/font-awesome.min.css') }} rel="stylesheet" type="text/css"/>
 <link href={{ asset('sb_theme/assets/global/plugins/simple-line-icons/simple-line-icons.min.css') }} rel="stylesheet" type="text/css"/>
 <link href={{ asset('sb_theme/assets/global/plugins/bootstrap/css/bootstrap.min.css') }} rel="stylesheet" type="text/css"/>
@@ -41,10 +40,11 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href={{ asset('sb_theme/assets/admin/pages/css/tasks.css') }} rel="stylesheet" type="text/css"/>
 <!-- END PAGE STYLES -->
 <!-- BEGIN THEME STYLES -->
+<!-- DOC: To use 'rounded corners' style just load 'components-rounded.css' stylesheet instead of 'components.css' in the below style tag -->
 <link href={{ asset('sb_theme/assets/global/css/components.css') }} id="style_components" rel="stylesheet" type="text/css"/>
 <link href={{ asset('sb_theme/assets/global/css/plugins.css') }} rel="stylesheet" type="text/css"/>
 <link href={{ asset('sb_theme/assets/admin/layout/css/layout.css') }} rel="stylesheet" type="text/css"/>
-<link id="style_color" href={{ asset('sb_theme/assets/admin/layout/css/themes/darkblue.css') }} rel="stylesheet" type="text/css"/>
+<link href={{ asset('sb_theme/assets/admin/layout/css/themes/darkblue.css') }} rel="stylesheet" type="text/css" id="style_color"/>
 <link href={{ asset('sb_theme/assets/admin/layout/css/custom.css') }} rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
@@ -60,11 +60,11 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
 <!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
 <!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
-<body class="page-header-fixed page-quick-sidebar-over-content page-full-width">
+<body class="page-header-fixed page-quick-sidebar-over-content page-style-square page-container-bg-solid">
 <!-- BEGIN HEADER -->
 <div class="page-header navbar navbar-fixed-top">
 	<!-- BEGIN HEADER INNER -->
-  @include('elements.registered_user.header')
+	@include('elements.registered_user.header')
 	<!-- END HEADER INNER -->
 </div>
 <!-- END HEADER -->
@@ -72,13 +72,15 @@ License: You must have a valid license purchased only from themeforest(the above
 </div>
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
-  @include('elements.registered_user.sidebar')
+	<!-- BEGIN SIDEBAR -->
+	  @include('elements.registered_user.sidebar')
+	<!-- END SIDEBAR -->
+	<!-- BEGIN CONTENT -->
   <div class="page-content-wrapper">
-		<div class="page-content">
+    <div class="page-content">
       @yield('content')
     </div>
-</div>
-<!-- END CONTENT -->
+	<!-- END CONTENT -->
 	<!-- BEGIN QUICK SIDEBAR -->
 	<a href="javascript:;" class="page-quick-sidebar-toggler"><i class="icon-close"></i></a>
 	<div class="page-quick-sidebar-wrapper">
@@ -219,7 +221,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<div class="media-body">
 										<h4 class="media-heading">Deon Portalatin</h4>
 										<div class="media-heading-sub">
-											 CFO, H & D LTD
+											 CFO, H&D LTD
 										</div>
 									</div>
 								</li>
@@ -256,7 +258,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								</div>
 								<div class="page-quick-sidebar-chat-user-messages">
 									<div class="post out">
-										<img class="avatar" alt="" src="{{ asset('sb_theme/assets/admin/layout/img/avatar3.js') }}"/>
+										<img class="avatar" alt="" src={{ asset('sb_theme/assets/admin/layout/img/avatar3.jpg') }}/>
 										<div class="message">
 											<span class="arrow"></span>
 											<a href="#" class="name">Bob Nilson</a>
@@ -266,7 +268,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</div>
 									<div class="post in">
-										<img class="avatar" alt="" src="{{ asset('sb_theme/assets/admin/layout/img/avatar2.js') }}"/>
+										<img class="avatar" alt="" src={{ asset('sb_theme/assets/admin/layout/img/avatar2.jpg') }}/>
 										<div class="message">
 											<span class="arrow"></span>
 											<a href="#" class="name">Ella Wong</a>
@@ -276,7 +278,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</div>
 									<div class="post out">
-										<img class="avatar" alt="" src="{{ asset('sb_theme/assets/admin/layout/img/avatar3.js') }}"/>
+										<img class="avatar" alt="" src={{ asset('sb_theme/assets/admin/layout/img/avatar3.jpg') }}/>
 										<div class="message">
 											<span class="arrow"></span>
 											<a href="#" class="name">Bob Nilson</a>
@@ -286,7 +288,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</div>
 									<div class="post in">
-										<img class="avatar" alt="" src="{{ asset('sb_theme/assets/admin/layout/img/avatar2.js') }}"/>
+										<img class="avatar" alt="" src={{ asset('sb_theme/assets/admin/layout/img/avatar2.jpg') }}/>
 										<div class="message">
 											<span class="arrow"></span>
 											<a href="#" class="name">Ella Wong</a>
@@ -296,7 +298,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</div>
 									<div class="post out">
-										<img class="avatar" alt="" src="{{ asset('sb_theme/assets/admin/layout/img/avatar3.js') }}"/>
+										<img class="avatar" alt="" src={{ asset('sb_theme/assets/admin/layout/img/avatar3.jpg') }}/>
 										<div class="message">
 											<span class="arrow"></span>
 											<a href="#" class="name">Bob Nilson</a>
@@ -306,7 +308,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</div>
 									<div class="post in">
-										<img class="avatar" alt="" src="{{ asset('sb_theme/assets/admin/layout/img/avatar2.js') }}"/>
+										<img class="avatar" alt="" src={{ asset('sb_theme/assets/admin/layout/img/avatar2.jpg') }}/>
 										<div class="message">
 											<span class="arrow"></span>
 											<a href="#" class="name">Ella Wong</a>
@@ -316,7 +318,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</div>
 									<div class="post out">
-										<img class="avatar" alt="" src="{{ asset('sb_theme/assets/admin/layout/img/avatar3.js') }}"/>
+										<img class="avatar" alt="" src={{ asset('sb_theme/assets/admin/layout/img/avatar3.jpg') }}/>
 										<div class="message">
 											<span class="arrow"></span>
 											<a href="#" class="name">Bob Nilson</a>
@@ -326,7 +328,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</div>
 									<div class="post in">
-										<img class="avatar" alt="" src="{{ asset('sb_theme/assets/admin/layout/img/avatar2.js') }}"/>
+										<img class="avatar" alt="" src={{ asset('sb_theme/assets/admin/layout/img/avatar2.jpg') }}/>
 										<div class="message">
 											<span class="arrow"></span>
 											<a href="#" class="name">Ella Wong</a>
@@ -336,7 +338,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</div>
 									<div class="post out">
-										<img class="avatar" alt="" src="{{ asset('sb_theme/assets/admin/layout/img/avatar3.js') }}"/>
+										<img class="avatar" alt="" src={{ asset('sb_theme/assets/admin/layout/img/avatar3.jpg') }}/>
 										<div class="message">
 											<span class="arrow"></span>
 											<a href="#" class="name">Bob Nilson</a>

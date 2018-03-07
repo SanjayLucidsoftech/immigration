@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--
-Template Name: LucidSoftech Theame
-Author: LucidSoftech Technologies
-Website: http://www.LucidSoftech.com/
-Contact: support@LucidSoftech.com
-Like: www.facebook.com/LucidSoftech
+Template Name: Sourcebow Theame
+Author: Sourcebow Technologies
+Website: http://www.sourcebow.com/
+Contact: support@sourcebow.com
+Like: www.facebook.com/sourcebow
 -->
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
@@ -14,7 +14,7 @@ Like: www.facebook.com/LucidSoftech
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
-  <title>{{ config('app.name', 'LucidSoftech: HR Manager') }}</title>
+  <title>{{ config('app.name', 'Sourcebow: HR Manager') }}</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">

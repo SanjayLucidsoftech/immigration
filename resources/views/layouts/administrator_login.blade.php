@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>{{ config('app.name', 'LucidSoftech: HR Manager') }}</title>
+<title>{{ config('app.name', 'Sourcebow: HR Manager') }}</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -64,7 +64,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     @yield('content')
 <div class="copyright">
-	 2018 © LucidSoftech Admin Panel.
+	 2018 © SourceBow Admin Panel.
 </div>
 <!-- END LOGIN -->
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->

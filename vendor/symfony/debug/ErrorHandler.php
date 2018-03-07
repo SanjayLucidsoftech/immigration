@@ -134,24 +134,10 @@ class ErrorHandler
             $handler = $prev[0];
             $replace = false;
         }
-        if (!$replace && $prev) {
+        if ($replace || !$prev) {
+            $handler->setExceptionHandler(set_exception_handler(array($handler, 'handleException')));
+        } else {
             restore_error_handler();
-            $handlerIsRegistered = is_array($prev) && $handler === $prev[0];
-        } else {
-            $handlerIsRegistered = true;
-        }
-        if (is_array($prev = set_exception_handler(array($handler, 'handleException'))) && $prev[0] instanceof self) {
-            restore_exception_handler();
-            if (!$handlerIsRegistered) {
-                $handler = $prev[0];
-            } elseif ($handler !== $prev[0] && $replace) {
-                set_exception_handler(array($handler, 'handleException'));
-                $p = $prev[0]->setExceptionHandler(null);
-                $handler->setExceptionHandler($p);
-                $prev[0]->setExceptionHandler($p);
-            }
-        } else {
-            $handler->setExceptionHandler($prev);
         }
 
         $handler->throwAt(E_ALL & $handler->thrownErrors, true);
@@ -610,8 +596,6 @@ class ErrorHandler
 
         $handler = self::$reservedMemory = null;
         $handlers = array();
-        $previousHandler = null;
-        $sameHandlerLimit = 10;
 
         while (!is_array($handler) || !$handler[0] instanceof self) {
             $handler = set_exception_handler('var_dump');
@@ -621,14 +605,7 @@ class ErrorHandler
                 break;
             }
             restore_exception_handler();
-
-            if ($handler !== $previousHandler) {
-                array_unshift($handlers, $handler);
-                $previousHandler = $handler;
-            } elseif (0 === --$sameHandlerLimit) {
-                $handler = null;
-                break;
-            }
+            array_unshift($handlers, $handler);
         }
         foreach ($handlers as $h) {
             set_exception_handler($h);

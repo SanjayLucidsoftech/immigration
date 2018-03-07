@@ -58,3 +58,98 @@ Change Quick Sidebar Width
   margin-left: -370px;
 }
 */
+.page-sidebar .page-sidebar-menu > li.active > a > .selected,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a > .selected {
+  border-right: 12px solid #efefef;
+}
+
+.page-content-wrapper .page-content {
+  background-color: #efefef;
+}
+
+.page-header.navbar .page-logo .text-logo {
+  padding-left: 20px;
+  padding-top: 12px;
+  color: #fff;
+}
+
+.page-header.navbar .page-logo .logo-default {
+  margin: 0px;
+  width: 45px;
+}
+
+.sb-admin .page-logo .logo-default {
+  margin: 0px;
+  width: 100px !important;
+}
+
+  .page-header.navbar .page-logo {
+    padding-left: 5px;
+    padding-right: 20px;
+  }
+
+
+  .companysettings .ver-inline-menu li {
+      position: relative;
+      margin-bottom: 1px;
+    }
+  .companysettings .ver-inline-menu li i {
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    color: #b9cbd5;
+    font-size: 15px;
+    padding: 12px 10px 10px 8px;
+    margin: 0 8px 0 0;
+    text-align: center;
+    background: #e0eaf0 !important;
+  }
+  .companysettings .ver-inline-menu li a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #557386;
+    display: block;
+    background: #f0f6fa;
+    border-left: solid 2px #c4d5df;
+    padding: 10px;
+  }
+  .companysettings .ver-inline-menu li:hover a {
+    background: #fff;
+    text-decoration: none;
+  }
+  .companysettings .ver-inline-menu li:hover i {
+    color: #fff;
+    background: #c4d5df !important;
+  }
+  .companysettings .ver-inline-menu li.active a {
+    border-left: solid 2px #0c91e5;
+  }
+  .companysettings .ver-inline-menu li.active i {
+    background: #0c91e5 !important;
+  }
+  .companysettings .ver-inline-menu li.active a, .companysettings .ver-inline-menu li.active i {
+    color: #fff;
+    background: #169ef4;
+    text-decoration: none;
+  }
+  .companysettings .ver-inline-menu li.active a, .companysettings .ver-inline-menu li:hover a {
+    font-size: 14px;
+  }
+  .companysettings .ver-inline-menu li.active:after {
+    content: '';
+    display: inline-block;
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-left: 6px solid #169ef4;
+    position: absolute;
+    top: 12px;
+    right: -5px;
+  }
+  .page-container-bg-solid .page-content {
+    background: #efefef;
+  }
+.companysettings .page-bar{
+ margin: 0px;
+}
+
+.cmpsetting_sidebar{width: 200px;}
