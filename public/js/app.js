@@ -10250,7 +10250,7 @@ __webpack_require__(90);
  */
 
 //require('./components/Example');
-__webpack_require__(223);
+__webpack_require__(115);
 
 /***/ }),
 /* 90 */
@@ -41115,7 +41115,1581 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 115 */,
+/* 115 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+'http://localhost:8000/sb_theme/assets/frontend/pages/img/people/img5-small.jpg';
+
+var Example = function (_Component) {
+  _inherits(Example, _Component);
+
+  function Example() {
+    _classCallCheck(this, Example);
+
+    return _possibleConstructorReturn(this, (Example.__proto__ || Object.getPrototypeOf(Example)).apply(this, arguments));
+  }
+
+  _createClass(Example, [{
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'pre-header' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'container' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'row' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-6 col-sm-6 additional-shop-info' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'ul',
+                  { className: 'list-unstyled list-inline' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-phone' }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'span',
+                      null,
+                      '+1 456 6717'
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-envelope-o' }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'span',
+                      null,
+                      'info@keenthemes.com'
+                    )
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-6 col-sm-6 additional-nav' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'ul',
+                  { className: 'list-unstyled list-inline pull-right' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: 'page-login.html' },
+                      'Log In'
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: 'page-reg-page.html' },
+                      'Registration'
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'page-slider margin-bottom-40' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'fullwidthbanner-container revolution-slider' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'fullwidthabnner' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'ul',
+                { id: 'revolutionul' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'li',
+                  { 'data-transition': 'fade', 'data-slotamount': '8', 'data-masterspeed': '700', 'data-delay': '9400', 'data-thumb': './sb_theme/assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/bg9.jpg', alt: '' }),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lft slide_title_white slide_item_left',
+                      'data-x': '30',
+                      'data-y': '90',
+                      'data-speed': '400',
+                      'data-start': '1500',
+                      'data-easing': 'easeOutExpo' },
+                    'Explore the Power',
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'span',
+                      { className: 'slide_title_white_bold' },
+                      'of Metronic'
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lft slide_subtitle_white slide_item_left',
+                      'data-x': '87',
+                      'data-y': '245',
+                      'data-speed': '400',
+                      'data-start': '2000',
+                      'data-easing': 'easeOutExpo' },
+                    'This is what you were looking for'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { className: 'caption lft btn dark slide_btn slide_item_left', href: 'http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes',
+                      'data-x': '187',
+                      'data-y': '315',
+                      'data-speed': '400',
+                      'data-start': '3000',
+                      'data-easing': 'easeOutExpo' },
+                    'Purchase Now!'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfb',
+                      'data-x': '640',
+                      'data-y': '0',
+                      'data-speed': '700',
+                      'data-start': '1000',
+                      'data-easing': 'easeOutExpo' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/lady.png', alt: 'Image 1' })
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'li',
+                  { 'data-transition': 'fade', 'data-slotamount': '8', 'data-masterspeed': '700', 'data-delay': '9400', 'data-thumb': './sb_theme/assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/bg1.jpg', alt: '' }),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lft slide_title slide_item_left',
+                      'data-x': '30',
+                      'data-y': '105',
+                      'data-speed': '400',
+                      'data-start': '1500',
+                      'data-easing': 'easeOutExpo' },
+                    'Need a website design?'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lft slide_subtitle slide_item_left',
+                      'data-x': '30',
+                      'data-y': '180',
+                      'data-speed': '400',
+                      'data-start': '2000',
+                      'data-easing': 'easeOutExpo' },
+                    'This is what you were looking for'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lft slide_desc slide_item_left',
+                      'data-x': '30',
+                      'data-y': '220',
+                      'data-speed': '400',
+                      'data-start': '2500',
+                      'data-easing': 'easeOutExpo' },
+                    'Lorem ipsum dolor sit amet, dolore eiusmod',
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                    ' quis tempor incididunt. Sed unde omnis iste.'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { className: 'caption lft btn green slide_btn slide_item_left', href: 'http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes',
+                      'data-x': '30',
+                      'data-y': '290',
+                      'data-speed': '400',
+                      'data-start': '3000',
+                      'data-easing': 'easeOutExpo' },
+                    'Purchase Now!'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfb',
+                      'data-x': '640',
+                      'data-y': '55',
+                      'data-speed': '700',
+                      'data-start': '1000',
+                      'data-easing': 'easeOutExpo' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/man-winner.png', alt: 'Image 1' })
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'li',
+                  { 'data-transition': 'fade', 'data-slotamount': '7', 'data-masterspeed': '300', 'data-delay': '9400', 'data-thumb': './sb_theme/assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/bg2.jpg', alt: '' }),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfl slide_title slide_item_left',
+                      'data-x': '30',
+                      'data-y': '125',
+                      'data-speed': '400',
+                      'data-start': '3500',
+                      'data-easing': 'easeOutExpo' },
+                    'Powerfull & Clean'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfl slide_subtitle slide_item_left',
+                      'data-x': '30',
+                      'data-y': '200',
+                      'data-speed': '400',
+                      'data-start': '4000',
+                      'data-easing': 'easeOutExpo' },
+                    'Responsive Admin & Website Theme'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfl slide_desc slide_item_left',
+                      'data-x': '30',
+                      'data-y': '245',
+                      'data-speed': '400',
+                      'data-start': '4500',
+                      'data-easing': 'easeOutExpo' },
+                    'Lorem ipsum dolor sit amet, consectetuer elit sed diam',
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                    ' nonummy amet euismod dolore.'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfr slide_item_right',
+                      'data-x': '635',
+                      'data-y': '105',
+                      'data-speed': '1200',
+                      'data-start': '1500',
+                      'data-easing': 'easeOutBack' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/mac.png', alt: 'Image 1' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfr slide_item_right',
+                      'data-x': '580',
+                      'data-y': '245',
+                      'data-speed': '1200',
+                      'data-start': '2000',
+                      'data-easing': 'easeOutBack' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/ipad.png', alt: 'Image 1' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfr slide_item_right',
+                      'data-x': '735',
+                      'data-y': '290',
+                      'data-speed': '1200',
+                      'data-start': '2500',
+                      'data-easing': 'easeOutBack' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/iphone.png', alt: 'Image 1' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfr slide_item_right',
+                      'data-x': '835',
+                      'data-y': '230',
+                      'data-speed': '1200',
+                      'data-start': '3000',
+                      'data-easing': 'easeOutBack' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/macbook.png', alt: 'Image 1' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lft slide_item_right',
+                      'data-x': '865',
+                      'data-y': '45',
+                      'data-speed': '500',
+                      'data-start': '5000',
+                      'data-easing': 'easeOutBack' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/hint1-red.png', id: 'rev-hint1', alt: 'Image 1' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfb slide_item_right',
+                      'data-x': '355',
+                      'data-y': '355',
+                      'data-speed': '500',
+                      'data-start': '5500',
+                      'data-easing': 'easeOutBack' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/hint2-red.png', id: 'rev-hint2', alt: 'Image 1' })
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'li',
+                  { 'data-transition': 'fade', 'data-slotamount': '8', 'data-masterspeed': '700', 'data-delay': '9400', 'data-thumb': './sb_theme/assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/bg3.jpg', alt: '' }),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfl slide_item_left',
+                      'data-x': '30',
+                      'data-y': '95',
+                      'data-speed': '400',
+                      'data-start': '1500',
+                      'data-easing': 'easeOutBack' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('iframe', { src: 'http://player.vimeo.com/video/56974716?portrait=0', width: '420', height: '240', allowFullScreen: true })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfr slide_title',
+                      'data-x': '470',
+                      'data-y': '100',
+                      'data-speed': '400',
+                      'data-start': '2000',
+                      'data-easing': 'easeOutExpo' },
+                    'Responsive Video Support'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfr slide_subtitle',
+                      'data-x': '470',
+                      'data-y': '170',
+                      'data-speed': '400',
+                      'data-start': '2500',
+                      'data-easing': 'easeOutExpo' },
+                    'Youtube, Vimeo and others.'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lfr slide_desc',
+                      'data-x': '470',
+                      'data-y': '220',
+                      'data-speed': '400',
+                      'data-start': '3000',
+                      'data-easing': 'easeOutExpo' },
+                    'Lorem ipsum dolor sit amet, consectetuer elit sed diam',
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                    ' nonummy amet euismod dolore.'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { className: 'caption lfr btn yellow slide_btn', href: '',
+                      'data-x': '470',
+                      'data-y': '280',
+                      'data-speed': '400',
+                      'data-start': '3500',
+                      'data-easing': 'easeOutExpo' },
+                    'Watch more Videos!'
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'li',
+                  { 'data-transition': 'fade', 'data-slotamount': '8', 'data-masterspeed': '700', 'data-delay': '9400', 'data-thumb': './sb_theme/assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/bg4.jpg', alt: '' }),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lft slide_title',
+                      'data-x': '30',
+                      'data-y': '105',
+                      'data-speed': '400',
+                      'data-start': '1500',
+                      'data-easing': 'easeOutExpo' },
+                    'What else included ?'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lft slide_subtitle',
+                      'data-x': '30',
+                      'data-y': '180',
+                      'data-speed': '400',
+                      'data-start': '2000',
+                      'data-easing': 'easeOutExpo' },
+                    'The Most Complete Admin Theme'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lft slide_desc',
+                      'data-x': '30',
+                      'data-y': '225',
+                      'data-speed': '400',
+                      'data-start': '2500',
+                      'data-easing': 'easeOutExpo' },
+                    'Lorem ipsum dolor sit amet, consectetuer elit sed diam',
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                    ' nonummy amet euismod dolore.'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { className: 'caption lft slide_btn btn red slide_item_left', href: 'http://www.keenthemes.com/preview/index.php?theme=metronic_admin', target: '_blank',
+                      'data-x': '30',
+                      'data-y': '300',
+                      'data-speed': '400',
+                      'data-start': '3000',
+                      'data-easing': 'easeOutExpo' },
+                    'Learn More!'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lft start',
+                      'data-x': '670',
+                      'data-y': '55',
+                      'data-speed': '400',
+                      'data-start': '2000',
+                      'data-easing': 'easeOutBack' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/iphone_left.png', alt: 'Image 2' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'caption lft start',
+                      'data-x': '850',
+                      'data-y': '55',
+                      'data-speed': '400',
+                      'data-start': '2400',
+                      'data-easing': 'easeOutBack' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/iphone_right.png', alt: 'Image 3' })
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'tp-bannertimer tp-bottom' })
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'main' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'container' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'row service-box margin-bottom-40' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-4 col-sm-4' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'service-box-heading' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'em',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-location-arrow blue' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'span',
+                    null,
+                    'Multipurpose Template'
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.'
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-4 col-sm-4' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'service-box-heading' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'em',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-check red' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'span',
+                    null,
+                    'Well Documented'
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.'
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-4 col-sm-4' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'service-box-heading' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'em',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-compress green' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'span',
+                    null,
+                    'Responsive Design'
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.'
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'row quote-v1 margin-bottom-30' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-9' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'span',
+                  null,
+                  'Metronic - The Most Complete & Popular Admin & Frontend Theme'
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-3 text-right' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'a',
+                  { className: 'btn-transparent', href: 'http://www.keenthemes.com/preview/index.php?theme=metronic_admin', target: '_blank' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-rocket margin-right-10' }),
+                  'Preview Admin'
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'row recent-work margin-bottom-40' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-3' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'h2',
+                  null,
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { href: 'portfolio.html' },
+                    'Recent Works'
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde voluptatem. Sed unde omnis iste natus error sit voluptatem.'
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-9' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'owl-carousel owl-carousel3' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'recent-work-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'em',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img1.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: 'portfolio-item.html' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: './sb_theme/assets/frontend/pages/img/works/img1.jpg', className: 'fancybox-button', title: 'Project Name #1', 'data-rel': 'fancybox-button' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { className: 'recent-work-description', href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'strong',
+                        null,
+                        'Amazing Project'
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'b',
+                        null,
+                        'Agenda corp.'
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'recent-work-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'em',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img2.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: 'portfolio-item.html' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: './sb_theme/assets/frontend/pages/img/works/img2.jpg', className: 'fancybox-button', title: 'Project Name #2', 'data-rel': 'fancybox-button' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { className: 'recent-work-description', href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'strong',
+                        null,
+                        'Amazing Project'
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'b',
+                        null,
+                        'Agenda corp.'
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'recent-work-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'em',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img3.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: 'portfolio-item.html' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: './sb_theme/assets/frontend/pages/img/works/img3.jpg', className: 'fancybox-button', title: 'Project Name #3', 'data-rel': 'fancybox-button' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { className: 'recent-work-description', href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'strong',
+                        null,
+                        'Amazing Project'
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'b',
+                        null,
+                        'Agenda corp.'
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'recent-work-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'em',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img4.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: 'portfolio-item.html' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: './sb_theme/assets/frontend/pages/img/works/img4.jpg', className: 'fancybox-button', title: 'Project Name #4', 'data-rel': 'fancybox-button' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { className: 'recent-work-description', href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'strong',
+                        null,
+                        'Amazing Project'
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'b',
+                        null,
+                        'Agenda corp.'
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'recent-work-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'em',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img5.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: 'portfolio-item.html' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: './sb_theme/assets/frontend/pages/img/works/img5.jpg', className: 'fancybox-button', title: 'Project Name #5', 'data-rel': 'fancybox-button' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { className: 'recent-work-description', href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'strong',
+                        null,
+                        'Amazing Project'
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'b',
+                        null,
+                        'Agenda corp.'
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'recent-work-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'em',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img6.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: 'portfolio-item.html' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: './sb_theme/assets/frontend/pages/img/works/img6.jpg', className: 'fancybox-button', title: 'Project Name #6', 'data-rel': 'fancybox-button' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { className: 'recent-work-description', href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'strong',
+                        null,
+                        'Amazing Project'
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'b',
+                        null,
+                        'Agenda corp.'
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'recent-work-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'em',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img3.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: 'portfolio-item.html' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: './sb_theme/assets/frontend/pages/img/works/img3.jpg', className: 'fancybox-button', title: 'Project Name #3', 'data-rel': 'fancybox-button' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { className: 'recent-work-description', href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'strong',
+                        null,
+                        'Amazing Project'
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'b',
+                        null,
+                        'Agenda corp.'
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'recent-work-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'em',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img4.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: 'portfolio-item.html' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: './sb_theme/assets/frontend/pages/img/works/img4.jpg', className: 'fancybox-button', title: 'Project Name #4', 'data-rel': 'fancybox-button' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { className: 'recent-work-description', href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'strong',
+                        null,
+                        'Amazing Project'
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'b',
+                        null,
+                        'Agenda corp.'
+                      )
+                    )
+                  )
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'row mix-block margin-bottom-40' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-7 tab-style-1' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'ul',
+                  { className: 'nav nav-tabs' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    { className: 'active' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#tab-1', 'data-toggle': 'tab' },
+                      'Multipurpose'
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#tab-2', 'data-toggle': 'tab' },
+                      'Documented'
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#tab-3', 'data-toggle': 'tab' },
+                      'Responsive'
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#tab-4', 'data-toggle': 'tab' },
+                      'Clean & Fresh'
+                    )
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'tab-content' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'tab-pane row fade in active', id: 'tab-1' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'div',
+                      { className: 'col-md-3 col-sm-3' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: 'assets/temp/photos/img7.jpg', className: 'fancybox-button', title: 'Image Title', 'data-rel': 'fancybox-button' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-responsive', src: './sb_theme/assets/frontend/pages/img/photos/img7.jpg', alt: '' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'div',
+                      { className: 'col-md-9 col-sm-9' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'p',
+                        { className: 'margin-bottom-10' },
+                        'Raw denim you probably haven\'t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Cosby sweater eu banh mi, qui irure terry richardson ex squid Aliquip placeat salvia cillum iphone.'
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'p',
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          'a',
+                          { className: 'more', href: '#' },
+                          'Read more ',
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'icon-angle-right' })
+                        )
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'tab-pane row fade', id: 'tab-2' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'div',
+                      { className: 'col-md-9 col-sm-9' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'p',
+                        null,
+                        'Food truck fixie locavore, accusamus mcsweeney\'s marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia..'
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'div',
+                      { className: 'col-md-3 col-sm-3' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: 'assets/temp/photos/img10.jpg', className: 'fancybox-button', title: 'Image Title', 'data-rel': 'fancybox-button' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-responsive', src: './sb_theme/assets/frontend/pages/img/photos/img10.jpg', alt: '' })
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'tab-pane fade', id: 'tab-3' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'p',
+                      null,
+                      'Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney\'s organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven\'t heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.'
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'tab-pane fade', id: 'tab-4' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'p',
+                      null,
+                      'Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.'
+                    )
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-5 testimonials-v1' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { id: 'myCarousel', className: 'carousel slide' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'carousel-inner' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'div',
+                      { className: 'active item' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'blockquote',
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          'p',
+                          null,
+                          'Denim you probably haven\'t heard of. Lorem ipsum dolor met consectetur adipisicing sit amet, consectetur adipisicing elit, of them jean shorts sed magna aliqua. Lorem ipsum dolor met.'
+                        )
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'carousel-info' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'pull-left', src: './sb_theme/assets/frontend/pages/img/people/img1-small.jpg', alt: '' }),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          'div',
+                          { className: 'pull-left' },
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'span',
+                            { className: 'testimonials-name' },
+                            'Lina Mars'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'span',
+                            { className: 'testimonials-post' },
+                            'Commercial Director'
+                          )
+                        )
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'div',
+                      { className: 'item' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'blockquote',
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          'p',
+                          null,
+                          'Raw denim you Mustache cliche tempor, williamsburg carles vegan helvetica probably haven\'t heard of them jean shorts austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.'
+                        )
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'carousel-info' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'pull-left', src: './sb_theme/assets/frontend/pages/img/people/img5-small.jpg', alt: '' }),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          'div',
+                          { className: 'pull-left' },
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'span',
+                            { className: 'testimonials-name' },
+                            'Kate Ford'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'span',
+                            { className: 'testimonials-post' },
+                            'Commercial Director'
+                          )
+                        )
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'div',
+                      { className: 'item' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'blockquote',
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          'p',
+                          null,
+                          'Reprehenderit butcher stache cliche tempor, williamsburg carles vegan helvetica.retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid Aliquip placeat salvia cillum iphone.'
+                        )
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'carousel-info' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'pull-left', src: './sb_theme/assets/frontend/pages/img/people/img2-small.jpg', alt: '' }),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          'div',
+                          { className: 'pull-left' },
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'span',
+                            { className: 'testimonials-name' },
+                            'Jake Witson'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'span',
+                            { className: 'testimonials-post' },
+                            'Commercial Director'
+                          )
+                        )
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { className: 'left-btn', href: '#myCarousel', 'data-slide': 'prev' }),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { className: 'right-btn', href: '#myCarousel', 'data-slide': 'next' })
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'row margin-bottom-40 front-steps-wrapper front-steps-count-3' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-4 col-sm-4 front-step-col' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'front-step front-step1' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'h2',
+                    null,
+                    'Goal definition'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'p',
+                    null,
+                    'Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.'
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-4 col-sm-4 front-step-col' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'front-step front-step2' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'h2',
+                    null,
+                    'Analyse'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'p',
+                    null,
+                    'Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.'
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-4 col-sm-4 front-step-col' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'front-step front-step3' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'h2',
+                    null,
+                    'Implementation'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'p',
+                    null,
+                    'Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.'
+                  )
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'row margin-bottom-40 our-clients' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-3' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'h2',
+                  null,
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { href: '#' },
+                    'Our Clients'
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'p',
+                  null,
+                  'Lorem dipsum folor margade sitede lametep eiusmod psumquis dolore.'
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-9' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'owl-carousel owl-carousel6-brands' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'client-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_1_gray.png', className: 'img-responsive', alt: '' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_1.png', className: 'color-img img-responsive', alt: '' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'client-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_2_gray.png', className: 'img-responsive', alt: '' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_2.png', className: 'color-img img-responsive', alt: '' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'client-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_3_gray.png', className: 'img-responsive', alt: '' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_3.png', className: 'color-img img-responsive', alt: '' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'client-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_4_gray.png', className: 'img-responsive', alt: '' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_4.png', className: 'color-img img-responsive', alt: '' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'client-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_5_gray.png', className: 'img-responsive', alt: '' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_5.png', className: 'color-img img-responsive', alt: '' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'client-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_6_gray.png', className: 'img-responsive', alt: '' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_6.png', className: 'color-img img-responsive', alt: '' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'client-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_7_gray.png', className: 'img-responsive', alt: '' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_7.png', className: 'color-img img-responsive', alt: '' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'client-item' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_8_gray.png', className: 'img-responsive', alt: '' }),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_8.png', className: 'color-img img-responsive', alt: '' })
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'pre-footer' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'container' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'row' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-4 col-sm-6 pre-footer-col' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'h2',
+                  null,
+                  'About us'
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam sit nonummy nibh euismod tincidunt ut laoreet dolore magna aliquarm erat sit volutpat.'
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'photo-stream' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'h2',
+                    null,
+                    'Photos Stream'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'ul',
+                    { className: 'list-unstyled' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/people/img5-small.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img1.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/people/img4-large.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img6.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img3.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/people/img2-large.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img2.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img5.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/people/img5-small.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img1.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/people/img4-large.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img6.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img3.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/people/img2-large.jpg' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'li',
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'a',
+                        { href: '#' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img2.jpg' })
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'footer' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'container' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'row' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-6 col-sm-6 padding-top-10' },
+                '2014 \xA9 Metronic Shop UI. ALL Rights Reserved. ',
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'a',
+                  { href: '#' },
+                  'Privacy Policy'
+                ),
+                ' | ',
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'a',
+                  { href: '#' },
+                  'Terms of Service'
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-6 col-sm-6' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'ul',
+                  { className: 'social-footer list-unstyled list-inline pull-right' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-facebook' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-google-plus' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-dribbble' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-linkedin' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-twitter' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-skype' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-github' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-youtube' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'a',
+                      { href: '#' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-dropbox' })
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Example;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Example);
+
+
+{/* import React, { Component } from 'react';
+  import ReactDOM from 'react-dom';
+  export default class Example extends Component {
+     render() {
+         return (
+             <div className="container">
+                 <div className="row">
+                     <div className="col-md-8 col-md-offset-2">
+                         <div className="panel panel-default">
+                             <div className="panel-heading">Example Component</div>
+                              <div className="panel-body">
+                                 I'm an example component!
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         );
+     }
+  } */}
+
+if (document.getElementById('root')) {
+  __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Example, null), document.getElementById('root'));
+}
+
+/***/ }),
 /* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -53613,1585 +55187,6 @@ module.exports = ReactDOMInvalidARIAHook;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-'http://localhost:8000/sb_theme/assets/frontend/pages/img/people/img5-small.jpg';
-
-var Example = function (_Component) {
-  _inherits(Example, _Component);
-
-  function Example() {
-    _classCallCheck(this, Example);
-
-    return _possibleConstructorReturn(this, (Example.__proto__ || Object.getPrototypeOf(Example)).apply(this, arguments));
-  }
-
-  _createClass(Example, [{
-    key: 'render',
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'div',
-        null,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { className: 'pre-header' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'row' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-6 col-sm-6 additional-shop-info' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'ul',
-                  { className: 'list-unstyled list-inline' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-phone' }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'span',
-                      null,
-                      '+1 456 6717'
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-envelope-o' }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'span',
-                      null,
-                      'info@keenthemes.com'
-                    )
-                  )
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-6 col-sm-6 additional-nav' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'ul',
-                  { className: 'list-unstyled list-inline pull-right' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: 'page-login.html' },
-                      'Log In'
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: 'page-reg-page.html' },
-                      'Registration'
-                    )
-                  )
-                )
-              )
-            )
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { className: 'page-slider margin-bottom-40' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'fullwidthbanner-container revolution-slider' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'fullwidthabnner' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'ul',
-                { id: 'revolutionul' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'li',
-                  { 'data-transition': 'fade', 'data-slotamount': '8', 'data-masterspeed': '700', 'data-delay': '9400', 'data-thumb': './sb_theme/assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/bg9.jpg', alt: '' }),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lft slide_title_white slide_item_left',
-                      'data-x': '30',
-                      'data-y': '90',
-                      'data-speed': '400',
-                      'data-start': '1500',
-                      'data-easing': 'easeOutExpo' },
-                    'Explore the Power',
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'span',
-                      { className: 'slide_title_white_bold' },
-                      'of Metronic'
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lft slide_subtitle_white slide_item_left',
-                      'data-x': '87',
-                      'data-y': '245',
-                      'data-speed': '400',
-                      'data-start': '2000',
-                      'data-easing': 'easeOutExpo' },
-                    'This is what you were looking for'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'a',
-                    { className: 'caption lft btn dark slide_btn slide_item_left', href: 'http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes',
-                      'data-x': '187',
-                      'data-y': '315',
-                      'data-speed': '400',
-                      'data-start': '3000',
-                      'data-easing': 'easeOutExpo' },
-                    'Purchase Now!'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfb',
-                      'data-x': '640',
-                      'data-y': '0',
-                      'data-speed': '700',
-                      'data-start': '1000',
-                      'data-easing': 'easeOutExpo' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/lady.png', alt: 'Image 1' })
-                  )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'li',
-                  { 'data-transition': 'fade', 'data-slotamount': '8', 'data-masterspeed': '700', 'data-delay': '9400', 'data-thumb': './sb_theme/assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/bg1.jpg', alt: '' }),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lft slide_title slide_item_left',
-                      'data-x': '30',
-                      'data-y': '105',
-                      'data-speed': '400',
-                      'data-start': '1500',
-                      'data-easing': 'easeOutExpo' },
-                    'Need a website design?'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lft slide_subtitle slide_item_left',
-                      'data-x': '30',
-                      'data-y': '180',
-                      'data-speed': '400',
-                      'data-start': '2000',
-                      'data-easing': 'easeOutExpo' },
-                    'This is what you were looking for'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lft slide_desc slide_item_left',
-                      'data-x': '30',
-                      'data-y': '220',
-                      'data-speed': '400',
-                      'data-start': '2500',
-                      'data-easing': 'easeOutExpo' },
-                    'Lorem ipsum dolor sit amet, dolore eiusmod',
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                    ' quis tempor incididunt. Sed unde omnis iste.'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'a',
-                    { className: 'caption lft btn green slide_btn slide_item_left', href: 'http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes',
-                      'data-x': '30',
-                      'data-y': '290',
-                      'data-speed': '400',
-                      'data-start': '3000',
-                      'data-easing': 'easeOutExpo' },
-                    'Purchase Now!'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfb',
-                      'data-x': '640',
-                      'data-y': '55',
-                      'data-speed': '700',
-                      'data-start': '1000',
-                      'data-easing': 'easeOutExpo' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/man-winner.png', alt: 'Image 1' })
-                  )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'li',
-                  { 'data-transition': 'fade', 'data-slotamount': '7', 'data-masterspeed': '300', 'data-delay': '9400', 'data-thumb': './sb_theme/assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/bg2.jpg', alt: '' }),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfl slide_title slide_item_left',
-                      'data-x': '30',
-                      'data-y': '125',
-                      'data-speed': '400',
-                      'data-start': '3500',
-                      'data-easing': 'easeOutExpo' },
-                    'Powerfull & Clean'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfl slide_subtitle slide_item_left',
-                      'data-x': '30',
-                      'data-y': '200',
-                      'data-speed': '400',
-                      'data-start': '4000',
-                      'data-easing': 'easeOutExpo' },
-                    'Responsive Admin & Website Theme'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfl slide_desc slide_item_left',
-                      'data-x': '30',
-                      'data-y': '245',
-                      'data-speed': '400',
-                      'data-start': '4500',
-                      'data-easing': 'easeOutExpo' },
-                    'Lorem ipsum dolor sit amet, consectetuer elit sed diam',
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                    ' nonummy amet euismod dolore.'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfr slide_item_right',
-                      'data-x': '635',
-                      'data-y': '105',
-                      'data-speed': '1200',
-                      'data-start': '1500',
-                      'data-easing': 'easeOutBack' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/mac.png', alt: 'Image 1' })
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfr slide_item_right',
-                      'data-x': '580',
-                      'data-y': '245',
-                      'data-speed': '1200',
-                      'data-start': '2000',
-                      'data-easing': 'easeOutBack' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/ipad.png', alt: 'Image 1' })
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfr slide_item_right',
-                      'data-x': '735',
-                      'data-y': '290',
-                      'data-speed': '1200',
-                      'data-start': '2500',
-                      'data-easing': 'easeOutBack' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/iphone.png', alt: 'Image 1' })
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfr slide_item_right',
-                      'data-x': '835',
-                      'data-y': '230',
-                      'data-speed': '1200',
-                      'data-start': '3000',
-                      'data-easing': 'easeOutBack' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/macbook.png', alt: 'Image 1' })
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lft slide_item_right',
-                      'data-x': '865',
-                      'data-y': '45',
-                      'data-speed': '500',
-                      'data-start': '5000',
-                      'data-easing': 'easeOutBack' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/hint1-red.png', id: 'rev-hint1', alt: 'Image 1' })
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfb slide_item_right',
-                      'data-x': '355',
-                      'data-y': '355',
-                      'data-speed': '500',
-                      'data-start': '5500',
-                      'data-easing': 'easeOutBack' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/hint2-red.png', id: 'rev-hint2', alt: 'Image 1' })
-                  )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'li',
-                  { 'data-transition': 'fade', 'data-slotamount': '8', 'data-masterspeed': '700', 'data-delay': '9400', 'data-thumb': './sb_theme/assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/bg3.jpg', alt: '' }),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfl slide_item_left',
-                      'data-x': '30',
-                      'data-y': '95',
-                      'data-speed': '400',
-                      'data-start': '1500',
-                      'data-easing': 'easeOutBack' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('iframe', { src: 'http://player.vimeo.com/video/56974716?portrait=0', width: '420', height: '240', allowFullScreen: true })
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfr slide_title',
-                      'data-x': '470',
-                      'data-y': '100',
-                      'data-speed': '400',
-                      'data-start': '2000',
-                      'data-easing': 'easeOutExpo' },
-                    'Responsive Video Support'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfr slide_subtitle',
-                      'data-x': '470',
-                      'data-y': '170',
-                      'data-speed': '400',
-                      'data-start': '2500',
-                      'data-easing': 'easeOutExpo' },
-                    'Youtube, Vimeo and others.'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lfr slide_desc',
-                      'data-x': '470',
-                      'data-y': '220',
-                      'data-speed': '400',
-                      'data-start': '3000',
-                      'data-easing': 'easeOutExpo' },
-                    'Lorem ipsum dolor sit amet, consectetuer elit sed diam',
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                    ' nonummy amet euismod dolore.'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'a',
-                    { className: 'caption lfr btn yellow slide_btn', href: '',
-                      'data-x': '470',
-                      'data-y': '280',
-                      'data-speed': '400',
-                      'data-start': '3500',
-                      'data-easing': 'easeOutExpo' },
-                    'Watch more Videos!'
-                  )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'li',
-                  { 'data-transition': 'fade', 'data-slotamount': '8', 'data-masterspeed': '700', 'data-delay': '9400', 'data-thumb': './sb_theme/assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/bg4.jpg', alt: '' }),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lft slide_title',
-                      'data-x': '30',
-                      'data-y': '105',
-                      'data-speed': '400',
-                      'data-start': '1500',
-                      'data-easing': 'easeOutExpo' },
-                    'What else included ?'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lft slide_subtitle',
-                      'data-x': '30',
-                      'data-y': '180',
-                      'data-speed': '400',
-                      'data-start': '2000',
-                      'data-easing': 'easeOutExpo' },
-                    'The Most Complete Admin Theme'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lft slide_desc',
-                      'data-x': '30',
-                      'data-y': '225',
-                      'data-speed': '400',
-                      'data-start': '2500',
-                      'data-easing': 'easeOutExpo' },
-                    'Lorem ipsum dolor sit amet, consectetuer elit sed diam',
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                    ' nonummy amet euismod dolore.'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'a',
-                    { className: 'caption lft slide_btn btn red slide_item_left', href: 'http://www.keenthemes.com/preview/index.php?theme=metronic_admin', target: '_blank',
-                      'data-x': '30',
-                      'data-y': '300',
-                      'data-speed': '400',
-                      'data-start': '3000',
-                      'data-easing': 'easeOutExpo' },
-                    'Learn More!'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lft start',
-                      'data-x': '670',
-                      'data-y': '55',
-                      'data-speed': '400',
-                      'data-start': '2000',
-                      'data-easing': 'easeOutBack' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/iphone_left.png', alt: 'Image 2' })
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'caption lft start',
-                      'data-x': '850',
-                      'data-y': '55',
-                      'data-speed': '400',
-                      'data-start': '2400',
-                      'data-easing': 'easeOutBack' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/revolutionslider/iphone_right.png', alt: 'Image 3' })
-                  )
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'tp-bannertimer tp-bottom' })
-            )
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { className: 'main' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'row service-box margin-bottom-40' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-4 col-sm-4' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'service-box-heading' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'em',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-location-arrow blue' })
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'span',
-                    null,
-                    'Multipurpose Template'
-                  )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.'
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-4 col-sm-4' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'service-box-heading' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'em',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-check red' })
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'span',
-                    null,
-                    'Well Documented'
-                  )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.'
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-4 col-sm-4' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'service-box-heading' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'em',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-compress green' })
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'span',
-                    null,
-                    'Responsive Design'
-                  )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.'
-                )
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'row quote-v1 margin-bottom-30' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-9' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'span',
-                  null,
-                  'Metronic - The Most Complete & Popular Admin & Frontend Theme'
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-3 text-right' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  { className: 'btn-transparent', href: 'http://www.keenthemes.com/preview/index.php?theme=metronic_admin', target: '_blank' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-rocket margin-right-10' }),
-                  'Preview Admin'
-                )
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'row recent-work margin-bottom-40' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-3' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'h2',
-                  null,
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'a',
-                    { href: 'portfolio.html' },
-                    'Recent Works'
-                  )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde voluptatem. Sed unde omnis iste natus error sit voluptatem.'
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-9' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'owl-carousel owl-carousel3' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'recent-work-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'em',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img1.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: 'portfolio-item.html' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: './sb_theme/assets/frontend/pages/img/works/img1.jpg', className: 'fancybox-button', title: 'Project Name #1', 'data-rel': 'fancybox-button' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { className: 'recent-work-description', href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'strong',
-                        null,
-                        'Amazing Project'
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'b',
-                        null,
-                        'Agenda corp.'
-                      )
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'recent-work-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'em',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img2.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: 'portfolio-item.html' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: './sb_theme/assets/frontend/pages/img/works/img2.jpg', className: 'fancybox-button', title: 'Project Name #2', 'data-rel': 'fancybox-button' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { className: 'recent-work-description', href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'strong',
-                        null,
-                        'Amazing Project'
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'b',
-                        null,
-                        'Agenda corp.'
-                      )
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'recent-work-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'em',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img3.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: 'portfolio-item.html' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: './sb_theme/assets/frontend/pages/img/works/img3.jpg', className: 'fancybox-button', title: 'Project Name #3', 'data-rel': 'fancybox-button' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { className: 'recent-work-description', href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'strong',
-                        null,
-                        'Amazing Project'
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'b',
-                        null,
-                        'Agenda corp.'
-                      )
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'recent-work-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'em',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img4.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: 'portfolio-item.html' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: './sb_theme/assets/frontend/pages/img/works/img4.jpg', className: 'fancybox-button', title: 'Project Name #4', 'data-rel': 'fancybox-button' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { className: 'recent-work-description', href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'strong',
-                        null,
-                        'Amazing Project'
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'b',
-                        null,
-                        'Agenda corp.'
-                      )
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'recent-work-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'em',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img5.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: 'portfolio-item.html' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: './sb_theme/assets/frontend/pages/img/works/img5.jpg', className: 'fancybox-button', title: 'Project Name #5', 'data-rel': 'fancybox-button' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { className: 'recent-work-description', href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'strong',
-                        null,
-                        'Amazing Project'
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'b',
-                        null,
-                        'Agenda corp.'
-                      )
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'recent-work-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'em',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img6.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: 'portfolio-item.html' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: './sb_theme/assets/frontend/pages/img/works/img6.jpg', className: 'fancybox-button', title: 'Project Name #6', 'data-rel': 'fancybox-button' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { className: 'recent-work-description', href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'strong',
-                        null,
-                        'Amazing Project'
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'b',
-                        null,
-                        'Agenda corp.'
-                      )
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'recent-work-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'em',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img3.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: 'portfolio-item.html' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: './sb_theme/assets/frontend/pages/img/works/img3.jpg', className: 'fancybox-button', title: 'Project Name #3', 'data-rel': 'fancybox-button' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { className: 'recent-work-description', href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'strong',
-                        null,
-                        'Amazing Project'
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'b',
-                        null,
-                        'Agenda corp.'
-                      )
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'recent-work-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'em',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/works/img4.jpg', alt: 'Amazing Project', className: 'img-responsive' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: 'portfolio-item.html' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-link' })
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: './sb_theme/assets/frontend/pages/img/works/img4.jpg', className: 'fancybox-button', title: 'Project Name #4', 'data-rel': 'fancybox-button' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-search' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { className: 'recent-work-description', href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'strong',
-                        null,
-                        'Amazing Project'
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'b',
-                        null,
-                        'Agenda corp.'
-                      )
-                    )
-                  )
-                )
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'row mix-block margin-bottom-40' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-7 tab-style-1' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'ul',
-                  { className: 'nav nav-tabs' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    { className: 'active' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#tab-1', 'data-toggle': 'tab' },
-                      'Multipurpose'
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#tab-2', 'data-toggle': 'tab' },
-                      'Documented'
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#tab-3', 'data-toggle': 'tab' },
-                      'Responsive'
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#tab-4', 'data-toggle': 'tab' },
-                      'Clean & Fresh'
-                    )
-                  )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'tab-content' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'tab-pane row fade in active', id: 'tab-1' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'div',
-                      { className: 'col-md-3 col-sm-3' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: 'assets/temp/photos/img7.jpg', className: 'fancybox-button', title: 'Image Title', 'data-rel': 'fancybox-button' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-responsive', src: './sb_theme/assets/frontend/pages/img/photos/img7.jpg', alt: '' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'div',
-                      { className: 'col-md-9 col-sm-9' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'p',
-                        { className: 'margin-bottom-10' },
-                        'Raw denim you probably haven\'t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Cosby sweater eu banh mi, qui irure terry richardson ex squid Aliquip placeat salvia cillum iphone.'
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'p',
-                        null,
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          'a',
-                          { className: 'more', href: '#' },
-                          'Read more ',
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'icon-angle-right' })
-                        )
-                      )
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'tab-pane row fade', id: 'tab-2' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'div',
-                      { className: 'col-md-9 col-sm-9' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'p',
-                        null,
-                        'Food truck fixie locavore, accusamus mcsweeney\'s marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia..'
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'div',
-                      { className: 'col-md-3 col-sm-3' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: 'assets/temp/photos/img10.jpg', className: 'fancybox-button', title: 'Image Title', 'data-rel': 'fancybox-button' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-responsive', src: './sb_theme/assets/frontend/pages/img/photos/img10.jpg', alt: '' })
-                      )
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'tab-pane fade', id: 'tab-3' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'p',
-                      null,
-                      'Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney\'s organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven\'t heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.'
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'tab-pane fade', id: 'tab-4' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'p',
-                      null,
-                      'Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.'
-                    )
-                  )
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-5 testimonials-v1' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { id: 'myCarousel', className: 'carousel slide' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'carousel-inner' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'div',
-                      { className: 'active item' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'blockquote',
-                        null,
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          'p',
-                          null,
-                          'Denim you probably haven\'t heard of. Lorem ipsum dolor met consectetur adipisicing sit amet, consectetur adipisicing elit, of them jean shorts sed magna aliqua. Lorem ipsum dolor met.'
-                        )
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'carousel-info' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'pull-left', src: './sb_theme/assets/frontend/pages/img/people/img1-small.jpg', alt: '' }),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          'div',
-                          { className: 'pull-left' },
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'span',
-                            { className: 'testimonials-name' },
-                            'Lina Mars'
-                          ),
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'span',
-                            { className: 'testimonials-post' },
-                            'Commercial Director'
-                          )
-                        )
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'div',
-                      { className: 'item' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'blockquote',
-                        null,
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          'p',
-                          null,
-                          'Raw denim you Mustache cliche tempor, williamsburg carles vegan helvetica probably haven\'t heard of them jean shorts austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.'
-                        )
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'carousel-info' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'pull-left', src: './sb_theme/assets/frontend/pages/img/people/img5-small.jpg', alt: '' }),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          'div',
-                          { className: 'pull-left' },
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'span',
-                            { className: 'testimonials-name' },
-                            'Kate Ford'
-                          ),
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'span',
-                            { className: 'testimonials-post' },
-                            'Commercial Director'
-                          )
-                        )
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'div',
-                      { className: 'item' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'blockquote',
-                        null,
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          'p',
-                          null,
-                          'Reprehenderit butcher stache cliche tempor, williamsburg carles vegan helvetica.retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid Aliquip placeat salvia cillum iphone.'
-                        )
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'carousel-info' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'pull-left', src: './sb_theme/assets/frontend/pages/img/people/img2-small.jpg', alt: '' }),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          'div',
-                          { className: 'pull-left' },
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'span',
-                            { className: 'testimonials-name' },
-                            'Jake Witson'
-                          ),
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'span',
-                            { className: 'testimonials-post' },
-                            'Commercial Director'
-                          )
-                        )
-                      )
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { className: 'left-btn', href: '#myCarousel', 'data-slide': 'prev' }),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { className: 'right-btn', href: '#myCarousel', 'data-slide': 'next' })
-                )
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'row margin-bottom-40 front-steps-wrapper front-steps-count-3' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-4 col-sm-4 front-step-col' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'front-step front-step1' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'h2',
-                    null,
-                    'Goal definition'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'p',
-                    null,
-                    'Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.'
-                  )
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-4 col-sm-4 front-step-col' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'front-step front-step2' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'h2',
-                    null,
-                    'Analyse'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'p',
-                    null,
-                    'Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.'
-                  )
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-4 col-sm-4 front-step-col' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'front-step front-step3' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'h2',
-                    null,
-                    'Implementation'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'p',
-                    null,
-                    'Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.'
-                  )
-                )
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'row margin-bottom-40 our-clients' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-3' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'h2',
-                  null,
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'a',
-                    { href: '#' },
-                    'Our Clients'
-                  )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'p',
-                  null,
-                  'Lorem dipsum folor margade sitede lametep eiusmod psumquis dolore.'
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-9' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'owl-carousel owl-carousel6-brands' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'client-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_1_gray.png', className: 'img-responsive', alt: '' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_1.png', className: 'color-img img-responsive', alt: '' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'client-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_2_gray.png', className: 'img-responsive', alt: '' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_2.png', className: 'color-img img-responsive', alt: '' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'client-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_3_gray.png', className: 'img-responsive', alt: '' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_3.png', className: 'color-img img-responsive', alt: '' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'client-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_4_gray.png', className: 'img-responsive', alt: '' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_4.png', className: 'color-img img-responsive', alt: '' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'client-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_5_gray.png', className: 'img-responsive', alt: '' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_5.png', className: 'color-img img-responsive', alt: '' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'client-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_6_gray.png', className: 'img-responsive', alt: '' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_6.png', className: 'color-img img-responsive', alt: '' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'client-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_7_gray.png', className: 'img-responsive', alt: '' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_7.png', className: 'color-img img-responsive', alt: '' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'client-item' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_8_gray.png', className: 'img-responsive', alt: '' }),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './sb_theme/assets/frontend/pages/img/clients/client_8.png', className: 'color-img img-responsive', alt: '' })
-                    )
-                  )
-                )
-              )
-            )
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { className: 'pre-footer' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'row' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-4 col-sm-6 pre-footer-col' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'h2',
-                  null,
-                  'About us'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam sit nonummy nibh euismod tincidunt ut laoreet dolore magna aliquarm erat sit volutpat.'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'photo-stream' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'h2',
-                    null,
-                    'Photos Stream'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'ul',
-                    { className: 'list-unstyled' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/people/img5-small.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img1.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/people/img4-large.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img6.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img3.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/people/img2-large.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img2.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img5.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/people/img5-small.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img1.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/people/img4-large.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img6.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img3.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/people/img2-large.jpg' })
-                      )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'li',
-                      null,
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'a',
-                        { href: '#' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '', src: './sb_theme/assets/frontend/pages/img/works/img2.jpg' })
-                      )
-                    )
-                  )
-                )
-              )
-            )
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { className: 'footer' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'row' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-6 col-sm-6 padding-top-10' },
-                '2014 \xA9 Metronic Shop UI. ALL Rights Reserved. ',
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  { href: '#' },
-                  'Privacy Policy'
-                ),
-                ' | ',
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  { href: '#' },
-                  'Terms of Service'
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-6 col-sm-6' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'ul',
-                  { className: 'social-footer list-unstyled list-inline pull-right' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-facebook' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-google-plus' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-dribbble' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-linkedin' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-twitter' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-skype' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-github' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-youtube' })
-                    )
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'a',
-                      { href: '#' },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-dropbox' })
-                    )
-                  )
-                )
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Example;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Example);
-
-
-{/* import React, { Component } from 'react';
-  import ReactDOM from 'react-dom';
-  export default class Example extends Component {
-     render() {
-         return (
-             <div className="container">
-                 <div className="row">
-                     <div className="col-md-8 col-md-offset-2">
-                         <div className="panel panel-default">
-                             <div className="panel-heading">Example Component</div>
-                              <div className="panel-body">
-                                 I'm an example component!
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         );
-     }
-  } */}
-
-if (document.getElementById('root')) {
-  __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Example, null), document.getElementById('root'));
-}
 
 /***/ })
 /******/ ]);
