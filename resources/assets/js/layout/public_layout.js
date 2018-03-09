@@ -6,8 +6,6 @@ export default class Example extends Component {
     render() {
         return (
             <div>
-
-
                 <div className="pre-header">
                     <div className="container">
                         <div className="row">

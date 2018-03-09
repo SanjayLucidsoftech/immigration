@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Laravel React application</title>
-        <link href="{{mix('css/app.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{mix('component/css/app.css')}}" rel="stylesheet" type="text/css">
     </head>
     <body>
     <h2 style="text-align: center"> Immigration React application </h2>
@@ -85,7 +85,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 <!-- Body BEGIN -->
 <body class="corporate">
         <div id="root"></div>
-        <script src="{{mix('js/app.js')}}" ></script>
+        <script src="{{mix('compontnt/js/app.js')}}" ></script>
 
 
 
