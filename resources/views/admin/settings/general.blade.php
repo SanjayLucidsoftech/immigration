@@ -70,8 +70,6 @@
                         <a href="#tab_1_3" data-toggle="tab" aria-expanded="true">
                             Footer menue </a>
                     </li>
-
-
                 </ul>
             </div>
         </div>
