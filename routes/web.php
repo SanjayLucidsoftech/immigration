@@ -45,13 +45,16 @@ Route::get('/admin-register','Admin\RegisterController@showRegistrationForm')->n
 Route::post('/admin-register','Admin\RegisterController@register');
 Route::get('/admin/users', 'Admin\UserController@index')->name('admin.user.user');
 
-//  Route::get('/admin/settings/web/general', function () {
-//     //  $placa = General::classActivePath('admin.home');
-//     //  $General = new General;
-//     // echo  $General->classActivePath('admin.home');
-//     echo "Here..";
-// });
+
+
 
 /* Admin  routs started ************************/
 Route::get('/admin/settings/web/general', 'Admin\settings\WebSettingController@general')->name('admin.settings.general');
+Route::post('/admin/settings/web/general', 'Admin\settings\WebSettingController@postGeneral');
+
+
+ 
+
+
+// Route::post('/admin/settings/web/general', 'Admin\settings\WebSettingController@postGeneral');
 /* Admin  routs End  ************************/
