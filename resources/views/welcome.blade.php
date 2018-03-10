@@ -123,7 +123,7 @@ License: You must have a valid license purchased only from themeforest (the abov
             Layout.initOWL();
             RevosliderInit.initRevoSlider();
             Layout.initTwitter();
-            Metronic.init();
+            //Metronic.init();
             //Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
             //Layout.initNavScrolling();
         });

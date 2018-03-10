@@ -1,24 +1,34 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import PreHeader from '../components/public/pre_header';
 import Header from '../components/public/header';
-import Slider from '../components/public/slider';
 import Content from '../components/public/content';
 import PreFooter from '../components/public/pre_footer';
 import Footer from '../components/public/footer';
 
+
+import Login from '../components/public/login';
+import Register from '../components/public/register';
+
+
+
 class Main extends Component {
   render() {
     return (
+      <Router>
       <div>
-        <PreHeader />
+         <PreHeader />
         <Header />
-        <Slider />
-        <Content />
-        <PreFooter />
+       
+          <Route exact path='/' component={Content} />
+          <Route path='/login' component={Login} />
+          <Route path='/register' component={Register} />
+          <PreFooter />
         <Footer />
       </div>
+      </Router>
     );
   }
 }

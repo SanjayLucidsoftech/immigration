@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+
 
 export default class PreHeader extends Component {
     render() {
@@ -17,10 +19,12 @@ export default class PreHeader extends Component {
                         {/* BEGIN TOP BAR MENU */}
                         <div className="col-md-6 col-sm-6 additional-nav">
                             <ul className="list-unstyled list-inline pull-right">
-                                <li><a href="page-login.html">Log In</a></li>
-                                <li><a href="page-reg-page.html">Registration</a></li>
+                                <li><Link to="./login">Log In</Link></li>
+                                <li><Link to="./register">Registration</Link></li>
                             </ul>
+                            
                         </div>
+                        
                         {/* END TOP BAR MENU */}
                     </div>
                 </div>

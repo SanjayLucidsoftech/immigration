@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-
+import Slider from './slider';
 export default class Content extends Component {
     render() {
         return (
+            <div className='page-slider'>
+            <Slider />
             <div className="main">
                 <div className="container">
                     {/* BEGIN SERVICE BOX */}
@@ -323,6 +325,7 @@ export default class Content extends Component {
                     {/* END CLIENTS */}
 
                 </div>
+            </div>
             </div>
         )
     }

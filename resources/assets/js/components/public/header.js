@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-
-
+import { Link } from "react-router-dom";
 export default class Header extends Component {
     render() {
         return (
-           
             <div className="header">
       <div className="container">
-        <a className="site-logo" href="index.html"><img src="./sb_theme/assets/frontend/layout/img/logos/logo-corp-red.png" alt="Metronic FrontEnd"/></a>
+        <Link  to="/" className="site-logo"><img src="./sb_theme/assets/frontend/layout/img/logos/logo-corp-red.png" alt="Metronic FrontEnd"/></Link>
 
         <a href="javascript:void(0);" className="mobi-toggler"><i className="fa fa-bars"></i></a>
 
@@ -15,9 +13,8 @@ export default class Header extends Component {
         <div className="header-navigation pull-right font-transform-inherit">
           <ul>
             <li className="dropdown">
-              <a className="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+              <a className="dropdown-toggle" data-toggle="dropdown"  href="#">
                 Home
-
               </a>
 
               <ul className="dropdown-menu">
@@ -26,11 +23,8 @@ export default class Header extends Component {
                 <li><a href="index-without-topbar.html">Home without Top Bar</a></li>
               </ul>
             </li>
-
-
-
             <li className="dropdown">
-              <a className="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+              <a className="dropdown-toggle" data-toggle="dropdown"  href="#">
                 Pages
 
               </a>
@@ -53,7 +47,7 @@ export default class Header extends Component {
               </ul>
             </li>
             <li className="dropdown">
-              <a className="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+              <a className="dropdown-toggle" data-toggle="dropdown"  href="#">
                 Features
 
               </a>
@@ -69,7 +63,7 @@ export default class Header extends Component {
                     <li><a href="index.html">Second Level Link</a></li>
                     <li><a href="index.html">Second Level Link</a></li>
                     <li className="dropdown-submenu">
-                      <a className="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+                      <a className="dropdown-toggle" data-toggle="dropdown"  href="#">
                         Second Level Link
                         <i className="fa fa-angle-right"></i>
                       </a>
@@ -84,7 +78,7 @@ export default class Header extends Component {
               </ul>
             </li>
             <li className="dropdown">
-              <a className="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+              <a className="dropdown-toggle" data-toggle="dropdown"  href="#">
                 Portfolio
 
               </a>
@@ -97,7 +91,7 @@ export default class Header extends Component {
               </ul>
             </li>
             <li className="dropdown">
-              <a className="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+              <a className="dropdown-toggle" data-toggle="dropdown"  href="#">
                 Blog
 
               </a>
@@ -109,7 +103,7 @@ export default class Header extends Component {
             </li>
 
              <li className="dropdown dropdown-megamenu">
-              <a className="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+              <a className="dropdown-toggle" data-toggle="dropdown"  href="#">
                 Mega Menu
 
               </a>
@@ -188,7 +182,6 @@ export default class Header extends Component {
         {/*  END NAVIGATION  */}
       </div>
     </div>
-            
         )
     }
 }
