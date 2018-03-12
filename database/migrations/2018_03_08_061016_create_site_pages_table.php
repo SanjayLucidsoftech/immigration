@@ -16,8 +16,9 @@ class CreateSitePagesTable extends Migration
         Schema::create('site_pages', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title',256)->nullable();
-            $table->string('alia',256)->unique();
+            $table->string('alia',250)->unique();
             $table->mediumText('description')->nullable();
+            $table->integer('parent')->default(0);
             $table->enum('status', [0,1])->default(1);
             $table->timestamps();
         });

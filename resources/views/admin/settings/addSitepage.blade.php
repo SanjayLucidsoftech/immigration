@@ -37,13 +37,12 @@
                                 </div>
                             @endif
         
-         
 
                             <!-- BEGIN FORM-->
-                            <form    method="POST" action="{{url('admin/settings/web/general')}}" id="form_sample_3" class="form-horizontal">
+                            <form    method="POST" action="{{url('admin/settings/web/addpage')}}" id="form_sample_3" class="form-horizontal">
                                 {{ csrf_field() }}
                                 <div class="form-body">
-                                    <h3 class="form-section">Add Site Page<small></small></h3>
+                                    <h3 class="form-section">Add Page<small></small></h3>
                                     <div class="alert alert-danger display-hide">
                                         <button class="close" data-close="alert"></button>
                                         You have some form errors. Please check below.
@@ -98,11 +97,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                                 <div class="form-actions">
                                     <div class="row">
                                         <div class="col-md-offset-3 col-md-9">
                                             <button type="submit" class="btn green">Submit</button>
-                                            <button type="button" class="btn default">Cancel</button>
+                                            <a class="btn default" href="{{ route('admin.settings.sitepages') }}">Cancel</a>
                                         </div>
                                     </div>
                                 </div>

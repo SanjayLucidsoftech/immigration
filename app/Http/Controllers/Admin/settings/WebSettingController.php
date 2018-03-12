@@ -25,23 +25,10 @@ class WebSettingController extends Controller
     }*/
     public function postGeneral(Request $request)
     {
-        $v = Validator::make($request->all(), [
-            'title'       => 'required',
-            'alia'        => 'required',
-            'description' => 'required',
-        ]);
-
-        if ($v->fails()) {
-            return back()->with('error', ' You have some form errors. Please check below');
-        } else {
-            $input = request()->all();
-            $user  = SitePage::create($input);
-//return redirect()->route('admin.settings.general');
-            return back()->with('success', 'Inserted successfully.');
-        }
+        
     }
 
-    public function sitepages(){
+    public function sitePages(){
 
         return view('admin.settings.sitepage');
     }
@@ -62,9 +49,9 @@ class WebSettingController extends Controller
         } else {
             $input = request()->all();
             $user  = SitePage::create($input);
-//return redirect()->route('admin.settings.general');
-            return back()->with('success', 'Inserted successfully.');
+            //return back()->with('success', 'Inserted successfully.');
         }
+        return redirect()->route('admin.settings.sitepages')->with('success', 'Inserted successfully.');
     }
      public function editPage($id)
     {
@@ -87,9 +74,10 @@ class WebSettingController extends Controller
 
     $task->fill($input)->save();
 
-   return back()->with('success', 'Updated successfully.');
+   //return back()->with('success', 'Updated successfully.');
         //$editpage = SitePage::findOrFail($id);
         //return view('admin.settings.editSitepage', compact('editpage'));
+        return redirect()->route('admin.settings.sitepages')->with('success', 'Updated successfully.');
     }
     public function deletePage($id)
     {
@@ -98,6 +86,10 @@ class WebSettingController extends Controller
     $task->delete();
 
     return back()->with('success', 'Deleted successfully.');
+    }
+
+    public function siteMenues(){
+        return view('admin.settings.siteMenues');
     }
 
 }

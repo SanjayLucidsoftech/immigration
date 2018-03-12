@@ -52,7 +52,7 @@ Route::get('/admin/users', 'Admin\UserController@index')->name('admin.user.user'
 Route::get('/admin/settings/web/general', 'Admin\settings\WebSettingController@general')->name('admin.settings.general');
 Route::post('/admin/settings/web/general', 'Admin\settings\WebSettingController@postGeneral');
 
-Route::get('/admin/settings/web/site-pages', 'Admin\settings\WebSettingController@sitepages')->name('admin.settings.sitepages');
+Route::get('/admin/settings/web/site-pages', 'Admin\settings\WebSettingController@sitePages')->name('admin.settings.sitepages');
 Route::get('/admin/settings/web/addpage', 'Admin\settings\WebSettingController@addPage')->name('sitepage_form');
 Route::post('/admin/settings/web/addpage', 'Admin\settings\WebSettingController@postAddpage');
 Route::get('/admin/settings/web/editpage/{id}', 'Admin\settings\WebSettingController@editPage')->name('editsitepage_form');
@@ -61,8 +61,21 @@ Route::get('/admin/settings/web/deletepage/{id}', 'Admin\settings\WebSettingCont
 
 
 
+Route::get('/admin/settings/web/site-menues', 'Admin\settings\WebSettingController@siteMenues')->name('admin.settings.sitemenues');
 
 
+Route::get('/admin/settings/sms', function () {
+    echo "comming soon";
+})->name('admin.settings.sms');;
+
+
+Route::get('/admin/settings/rools', function () {
+    echo "comming soon";
+})->name('admin.settings.rools');;
+
+Route::get('/admin/settings/rools', function () {
+    echo "comming soon";
+})->name('admin.settings.rools');;
  
 
 

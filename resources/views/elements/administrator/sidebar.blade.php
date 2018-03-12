@@ -266,14 +266,14 @@
           </li>
         </ul>
       </li>  --}}
-      <li class="{{{ (General::classActivePath('admin.settings.web.general') ? 'active open' : '') }}}">
+      <li class="{{{ (General::classActivePath('admin.settings') ? 'active open' : '') }}}">
         <a href="{{ route('admin.settings.general') }}">
         <i class="icon-settings"></i>
         <span class="title">SETTINGS</span>
-        @if (General::classActivePath('admin.settings.web.general'))
+        @if (General::classActivePath('admin.settings'))
           <span class=selected></span>
         @endif
-        <span class="{{{ (General::classActivePath('admin.settings.web.general') ? 'open' : '') }}}"></span>
+        <span class="{{{ (General::classActivePath('admin.settings') ? 'open' : '') }}}"></span>
         </a>
       </li>
 
