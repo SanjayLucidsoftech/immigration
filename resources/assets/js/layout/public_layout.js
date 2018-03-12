@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {BrowserRouter as Router , Switch ,Route, Link } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom'
 
 import PreHeader from '../components/public/pre_header';
 import Header from '../components/public/header';
@@ -21,10 +22,11 @@ class Main extends Component {
       <div>
          <PreHeader />
         <Header />
-       
-          <Route exact path='/' component={Content} />
+       <Switch>
+          <Route exact path='/' component={Register} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
+          </Switch>
           <PreFooter />
         <Footer />
       </div>

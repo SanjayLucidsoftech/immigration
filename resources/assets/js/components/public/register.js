@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-export default class PreHeader extends Component {
+export default class Register extends Component {
     render() {
         return (
             <div className="main">
@@ -66,17 +66,7 @@ export default class PreHeader extends Component {
                               </div>
                             </div>
                           </fieldset>
-                          <fieldset>
-                            <legend>Newsletter</legend>
-                            <div className="checkbox form-group">
-                              <label>
-                                <div className="col-lg-4 col-sm-4">Singup for Newsletter</div>
-                                <div className="col-lg-8 col-sm-8">
-                                  <input type="checkbox"/>
-                                </div>
-                              </label>
-                            </div>
-                          </fieldset>
+
                           <div className="row">
                             <div className="col-lg-8 col-md-offset-4 padding-left-0 padding-top-20">                        
                               <button type="submit" className="btn btn-primary">Create an account</button>
