@@ -149,7 +149,7 @@ Change Quick Sidebar Width
     background: #efefef;
   }
 .companysettings .page-bar{
- margin: 0px;
+ margin: 0px 0px 25px 0px;
 }
 
 .cmpsetting_sidebar{width: 200px;}
