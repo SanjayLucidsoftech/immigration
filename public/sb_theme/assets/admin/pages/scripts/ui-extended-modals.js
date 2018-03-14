@@ -48,7 +48,7 @@ var UIExtendedModals = function () {
                   $modal.load('ui_extended_modals_ajax_sample.html', '', function(){
                   $modal.modal();
                 });
-              }, 1000);
+              }, 10);
             });
 
             $modal.on('click', '.update', function(){
