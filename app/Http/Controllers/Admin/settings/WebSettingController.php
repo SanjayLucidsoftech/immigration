@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\SitePage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use App\Healpers\General;
 
 class WebSettingController extends Controller
 {
@@ -40,7 +41,6 @@ class WebSettingController extends Controller
     {
         $v = Validator::make($request->all(), [
             'title'       => 'required',
-            'alia'        => 'required',
             'description' => 'required',
         ]);
 
@@ -48,6 +48,8 @@ class WebSettingController extends Controller
             return back()->with('error', ' You have some form errors. Please check below');
         } else {
             $input = request()->all();
+            $input['alia']=General::clean($input['title']);
+            //print_r($input); die;
             $user  = SitePage::create($input);
             //return back()->with('success', 'Inserted successfully.');
         }
@@ -61,20 +63,24 @@ class WebSettingController extends Controller
     }
 
      public function updatePage(Request $request, $id)
-    {
+    {   
         $task = SitePage::findOrFail($id);
-
-    $this->validate($request, [
-        'title' => 'required',
-        'alia' => 'required',
-        'description' => 'required',
-    ]);
-
-    $input = $request->all();
-
-    $task->fill($input)->save();
-
-   //return back()->with('success', 'Updated successfully.');
+    
+        $v = Validator::make($request->all(), [
+            'title'       => 'required',
+            'description' => 'required',
+        ]);
+        
+        if ($v->fails()) {
+            return back()->with('error', ' You have some form errors. Please check below');
+        } else {
+            $input = $request->all();
+            $input['alia']=General::clean($input['title']);
+            //print_r($input);die;
+            $task->fill($input)->save();
+        }
+        
+        //return back()->with('success', 'Updated successfully.');
         //$editpage = SitePage::findOrFail($id);
         //return view('admin.settings.editSitepage', compact('editpage'));
         return redirect()->route('admin.settings.sitepages')->with('success', 'Updated successfully.');
@@ -82,13 +88,13 @@ class WebSettingController extends Controller
     public function deletePage($id)
     {
     $task = SitePage::findOrFail($id);
-
     $task->delete();
-
     return back()->with('success', 'Deleted successfully.');
     }
 
     public function siteMenues(){
+        $sitepages=SitePage::all();
+        print_r($sitepages);die;
         return view('admin.settings.siteMenues');
     }
 

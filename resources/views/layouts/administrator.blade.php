@@ -38,6 +38,10 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- END PAGE LEVEL PLUGIN STYLES -->
 <!-- BEGIN PAGE STYLES -->
 <link href={{ asset('sb_theme/assets/admin/pages/css/tasks.css') }} rel="stylesheet" type="text/css"/>
+<link href={{ asset('sb_theme/assets/global/plugins/bootstrap-select/bootstrap-select.min.css') }} rel="stylesheet" type="text/css"/>
+<link href={{ asset('sb_theme/assets/global/plugins/select2/select2.css') }} rel="stylesheet" type="text/css"/>
+<link href={{ asset('sb_theme/assets/global/plugins/jquery-multi-select/css/multi-select.css') }} rel="stylesheet" type="text/css"/>
+
 <!-- END PAGE STYLES -->
 <!-- BEGIN THEME STYLES -->
 <!-- DOC: To use 'rounded corners' style just load 'components-rounded.css' stylesheet instead of 'components.css' in the below style tag -->
@@ -46,6 +50,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href={{ asset('sb_theme/assets/admin/layout/css/layout.css') }} rel="stylesheet" type="text/css"/>
 <link href={{ asset('sb_theme/assets/admin/layout/css/themes/darkblue.css') }} rel="stylesheet" type="text/css" id="style_color"/>
 <link href={{ asset('sb_theme/assets/admin/layout/css/custom.css') }} rel="stylesheet" type="text/css"/>
+@yield('pages_level_header');
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
 </head>

@@ -10,21 +10,12 @@ use App\Models\SitePage;?>
             <div class="row">
                 <div class="col-md-12">
                     <!-- BEGIN EXAMPLE TABLE PORTLET-->
-                    <div class="portlet box blue">
+                    <div class="portlet box blue-hoki">
                         <div class="portlet-title">
                             <div class="caption">
-                                <i class="fa fa-edit"></i>Editable Table
+                                <i class="fa fa-edit"></i>List Site Pages
                             </div>
-                            <div class="tools">
-                                <a href="javascript:;" class="collapse">
-                                </a>
-                                <a href="#portlet-config" data-toggle="modal" class="config">
-                                </a>
-                                <a href="javascript:;" class="reload">
-                                </a>
-                                <a href="javascript:;" class="remove">
-                                </a>
-                            </div>
+                            
                         </div>
                         <div class="portlet-body">
                             <div class="table-toolbar">
@@ -35,7 +26,7 @@ use App\Models\SitePage;?>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="btn-group pull-right">
+                                        {{--  <div class="btn-group pull-right">
                                             <button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
                                             </button>
                                             <ul class="dropdown-menu pull-right">
@@ -52,7 +43,7 @@ use App\Models\SitePage;?>
                                                     Export to Excel </a>
                                                 </li>
                                             </ul>
-                                        </div>
+                                        </div>  --}}
                                     </div>
                                 </div>
                             </div>
@@ -72,10 +63,7 @@ use App\Models\SitePage;?>
                                      Page Title
                                 </th>
                                 <th>
-                                     Alia
-                                </th>
-                                <th>
-                                     Descriptio
+                                     Url
                                 </th>
                                 <th>
                                     Status
@@ -95,10 +83,7 @@ use App\Models\SitePage;?>
                                      {{ $sitepage->title }}
                                 </td>
                                 <td>
-                                     {{ $sitepage->alia }}
-                                </td>
-                                <td>
-                                     {{ $sitepage->description }}
+                                   <a href="{{ url('/') }}/{{ $sitepage->alia }}" target="_blank"> {{ url('/') }}/{{ $sitepage->alia }}</a>
                                 </td>
                                 <td class="center">
                                      {{ $sitepage->status }}

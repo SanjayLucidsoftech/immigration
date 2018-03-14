@@ -47,12 +47,16 @@
 <script src={{ asset('sb_theme/assets/global/plugins/jquery.sparkline.min.js') }} type="text/javascript"></script> --}}
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
+@yield('pages_level_footer');
+<script src={{ asset('sb_theme/assets/global/plugins/bootstrap-summernote/summernote.min.js') }} type="text/javascript"></script>
 <script src={{ asset('sb_theme/assets/global/scripts/metronic.js') }} type="text/javascript"></script>
 <script src={{ asset('sb_theme/assets/admin/layout/scripts/layout.js') }} type="text/javascript"></script>
 <script src={{ asset('sb_theme/assets/admin/layout/scripts/quick-sidebar.js') }} type="text/javascript"></script>
 <script src={{ asset('sb_theme/assets/admin/layout/scripts/demo.js') }} type="text/javascript"></script>
 <script src={{ asset('sb_theme/assets/admin/pages/scripts/index.js') }} type="text/javascript"></script>
 <script src={{ asset('sb_theme/assets/admin/pages/scripts/tasks.js') }} type="text/javascript"></script>
+<script src={{ asset('sb_theme/assets/admin/pages/scripts/components-dropdowns.js') }} type="text/javascript"></script>
+
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
 jQuery(document).ready(function() {
@@ -68,6 +72,8 @@ jQuery(document).ready(function() {
    Index.initChat();
    Index.initMiniCharts();
    Tasks.initDashboardWidget();
+   ComponentsDropdowns.init();
+  // ComponentsEditors.init();
 });
 </script>
 <!-- END JAVASCRIPTS -->
