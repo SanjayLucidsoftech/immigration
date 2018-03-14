@@ -66,18 +66,20 @@ Route::get('/admin/settings/web/site-menues', 'Admin\settings\WebSettingControll
 
 Route::get('/admin/settings/sms', function () {
     echo "comming soon";
-})->name('admin.settings.sms');;
+})->name('admin.settings.sms');
 
 
 Route::get('/admin/settings/rools', function () {
     echo "comming soon";
-})->name('admin.settings.rools');;
+})->name('admin.settings.rools');
 
 Route::get('/admin/settings/rools', function () {
     echo "comming soon";
-})->name('admin.settings.rools');;
+})->name('admin.settings.rools');
  
-
+// Route::get('/company/{id}', function () {
+//     echo "comming soon";
+// })->name('company.rools');
 
 // Route::post('/admin/settings/web/general', 'Admin\settings\WebSettingController@postGeneral');
 /* Admin  routs End  ************************/

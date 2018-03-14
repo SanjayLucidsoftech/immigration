@@ -1,6 +1,10 @@
-@extends('layouts.administrator') @section('content')
+@extends('layouts.administrator') 
 
+@section('pages_level_header')
+<link href={{ asset('sb_theme/assets/global/plugins/bootstrap-summernote/summernote.css') }} rel="stylesheet" type="text/css"/>
+@endsection
 
+@section('content')
 <!-- BEGIN CONTENT -->
 
 <div class="row companysettings">
@@ -10,7 +14,7 @@
              <div class="row">
                 <div class="col-md-12">
                     <!-- BEGIN VALIDATION STATES-->
-                    <div class="portlet box green">
+                    <div class="portlet box blue-hoki">
                         <div class="portlet-title">
                             <div class="caption">
                                 <i class="fa fa-gift"></i>Add Site Pages
@@ -36,7 +40,7 @@
                                     @endphp
                                 </div>
                             @endif
-        
+
 
                             <!-- BEGIN FORM-->
                             <form    method="POST" action="{{url('admin/settings/web/addpage')}}" id="form_sample_3" class="form-horizontal">
@@ -56,16 +60,15 @@
                                         <label class="control-label col-md-3">Page Title <span class="required">
                                         * </span>
                                         </label>
-                                        <div class="col-md-4">
+                                        <div class="col-md-9">
                                             <input type="text" name="title" data-required="1" class="form-control"/>
                                         </div>
                                         <!--@if ($errors->has('title'))
                     <span class="text-danger">{{ $errors->first('title') }}</span>
                 @endif-->                                  
                                     </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Alia <span class="required">
-                                        * </span>
+                                    {{--  <div class="form-group">
+                                        <label class="control-label col-md-3">Alia 
                                         </label>
                                         <div class="col-md-4">
                                             <input type="text" name="alia" data-required="1" class="form-control"/>
@@ -73,18 +76,18 @@
                                          <!--@if ($errors->has('alia'))
                     <span class="text-danger">{{ $errors->first('alia') }}</span>
                 @endif-->                        
-                                    </div>
+                                    </div>  --}}
                                     <div class="form-group">
-                                        <label class="control-label col-md-3">Description <span class="required">
-                                        * </span>
+                                        <label class="control-label col-md-3">Description
                                         </label>
-                                        <div class="col-md-4">
-                                            <input type="text" name="description" data-required="1" class="form-control"/>
-                                        </div>
+                                        <div class="col-md-9">
+                                            {{--  <input type="text" name="description" data-required="1" class="form-control"/>  --}}
+                                            <textarea name="description" id="summernote_1">
+											</textarea>
                                     </div>
+                                </div>
                                     <div class="form-group">
-                                        <label class="control-label col-md-3">Status <span class="required">
-                                        * </span>
+                                        <label class="control-label col-md-3">Status
                                         </label>
                                         <div class="col-md-4">
                                             <div class="checkbox-list" data-error-container="#form_2_services_error">
@@ -119,4 +122,12 @@
 
 </div>
 
+@endsection
+@section('pages_level_footer')
+<script src={{ asset('sb_theme/assets/admin/pages/scripts/components-editors.js') }} type="text/javascript"></script>
+<script>
+    jQuery(document).ready(function() {
+       ComponentsEditors.init();
+    });
+    </script>
 @endsection
