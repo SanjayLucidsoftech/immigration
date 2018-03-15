@@ -58,6 +58,12 @@ Change Quick Sidebar Width
   margin-left: -370px;
 }
 */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
 .page-sidebar .page-sidebar-menu > li.active > a > .selected,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a > .selected {
   border-right: 12px solid #efefef;

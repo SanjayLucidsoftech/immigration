@@ -28,12 +28,19 @@
                                       <div class="btn-group">
                                             {{--  <a href="{{ route('sitepage_form') }}" class="btn green">Add New<i class="fa fa-plus"></i></a>  --}}
 
-                                            <a class="btn default" id="editMenues-xx" data-toggle="modal">
+                                            {{--  <a class="btn default" id="editMenues-xx" data-toggle="modal">
                                             View Demo</a>
+
+                                            <a class="btn default" id="ajax-demo" data-toggle="modal">
+                                                View Demo ajax</a>  --}}
                                             <a class="btn green" data-toggle="modal" href="#add_menue">
                                                 Add New<i class="fa fa-plus"></i> </a>
                                             <div id="editMenues" class="modal fade" tabindex="-1">
                                             </div>
+                                            
+                                            <div id="ajax-modal" class="modal fade" tabindex="-1">
+                                            </div>
+
                                         </div>
                                     </div>
                                     {{--  <div class="col-md-6">
@@ -137,7 +144,9 @@
                                 <div class="dd" id="nestable_list_3">
                                     {{--  {{General::build_menu($sitemenues)}}  --}}
                                     {{--  {{ (new App\Healpers\General)->build_menu($sitemenues) }}  --}}
-                                    {!!html_entity_decode((new App\Healpers\General)->build_menu($sitemenues))!!}
+                                    {{--  {!!html_entity_decode((new App\Healpers\General)->build_menu($sitemenues))!!}  --}}
+                                    {!!html_entity_decode($build_menu)!!}
+                                    
 
                                     {{--  <ol class="dd-list">
                                             {{--  @foreach ($sitemenues as $sitemenu)
@@ -220,15 +229,25 @@
     //     UINestable.init();
     // });
     UIExtendedModals.init();
-// {{ route('admin.settings.editMenu') }}
-$('#editMenues-xx').on('click', function(){
-  var $modal = $('#editMenues');
+ 
+// $('#editMenues-xx').on('click', function(){
+//   var $modal = $('#editMenues');
+//   // create the backdrop and wait for next modal to be triggered
+//   //$('body').modalmanager('loading');
+//   $modal.load("http://localhost:8010/admin/settings/web/edit-menu/1", '', function(){
+//       $modal.modal();
+//   }, 1000);
+// });
+//route('admin.settings.editMenu', ['id' => 1])
+var $modal = $('#editMenues');
+function edit_menu(id){
   // create the backdrop and wait for next modal to be triggered
-  $('body').modalmanager('loading');
-  $modal.load("{{ route('sitepage_form') }}/1", '', function(){
+  //$('body').modalmanager('loading');
+  $modal.load("{{route('admin.settings.editMenu', ['id' => ""])}}/"+id, '', function(){
       $modal.modal();
   }, 1000);
-});
+}
+
     </script>
 @endsection
 

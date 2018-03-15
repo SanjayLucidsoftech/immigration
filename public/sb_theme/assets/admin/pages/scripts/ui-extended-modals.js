@@ -45,7 +45,9 @@ var UIExtendedModals = function () {
               $('body').modalmanager('loading');
 
               setTimeout(function(){
-                  $modal.load('ui_extended_modals_ajax_sample.html', '', function(){
+                  $modal.load('http://localhost:8010/admin/settings/web/edit-menu/1', '', function(){
+                  $modal.modal();
+                });  $modal.load('http://localhost:8010/admin/settings/web/edit-menu/1', '', function(){
                   $modal.modal();
                 });
               }, 10);

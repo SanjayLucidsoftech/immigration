@@ -68,6 +68,7 @@ Route::post('/admin/settings/web/site-menues', 'Admin\settings\WebSettingControl
 Route::get('/admin/settings/web/edit-menu/{id}', 'Admin\settings\WebSettingController@editMenu')->name('admin.settings.editMenu');
 
 Route::post('/admin/settings/web/edit-menu/{id}', 'Admin\settings\WebSettingController@updateMenu');
+Route::get('/admin/settings/web/delete-menu/{id}', 'Admin\settings\WebSettingController@deleteMenu')->name('admin.settings.deleteMenu');
 
 
 Route::get('/admin/settings/sms', function () {
