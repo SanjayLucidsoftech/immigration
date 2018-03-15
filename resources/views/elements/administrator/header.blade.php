@@ -372,14 +372,14 @@
             <i class="icon-lock"></i> Lock Screen </a>
           </li>
           <li>
-              <a href="{{ route('logout') }}"
+              <a href="{{ route('admin.logout') }}"
                   onclick="event.preventDefault();
                            document.getElementById('logout-form').submit();">
                 <i class="icon-key"></i>
                   Logout
               </a>
 
-              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
                   {{ csrf_field() }}
               </form>
           </li>

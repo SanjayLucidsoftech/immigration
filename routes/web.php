@@ -11,23 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/introduction', function () {
-    return view('guest.introduction');
-});
-Route::get('/features', function () {
-    return view('guest.features');
-});
-Route::get('/prices', function () {
-    return view('guest.prices');
-});
 
-Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/settings/company/general', 'settings\CompSettingController@general')->name('settings.general');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+// Route::get('/introduction', function () {
+//     return view('guest.introduction');
+// });
+// Route::get('/features', function () {
+//     return view('guest.features');
+// });
+// Route::get('/prices', function () {
+//     return view('guest.prices');
+// });
+
+//Auth::routes();
+// Route::get('/home', 'HomeController@index')->name('home');
+
+// Route::get('/settings/company/general', 'settings\CompSettingController@general')->name('settings.general');
 
 
 
@@ -36,7 +38,7 @@ Route::get('/settings/company/general', 'settings\CompSettingController@general'
 Route::get('/admin/home', 'AdminController@index')->name('admin.home');;
 Route::get('admin','Admin\LoginController@showLoginForm')->name('admin.login');
 Route::post('admin','Admin\LoginController@login');
-//Route::post('logout','Admin\LoginController@logout')->name('admin.logout');;
+Route::post('logout','Admin\LoginController@logout')->name('admin.logout');;
 Route::post('/admin-password/email','Admin\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
 Route::get('/admin-password/reset','Admin\ForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
 Route::post('/admin-password/reset','Admin\ResetPasswordController@reset');
@@ -90,3 +92,7 @@ Route::get('/admin/settings/rools', function () {
 
 // Route::post('/admin/settings/web/general', 'Admin\settings\WebSettingController@postGeneral');
 /* Admin  routs End  ************************/
+
+Route::get( '/{any}', function () {
+    return view('welcome');
+})->where('any', '.*');
