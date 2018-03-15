@@ -23,7 +23,7 @@ class Main extends Component {
          <PreHeader />
         <Header />
        <Switch>
-          <Route exact path='/' component={Register} />
+          <Route exact path='/' component={Content} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
           </Switch>
