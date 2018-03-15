@@ -1,5 +1,3 @@
-<?php
-use App\Models\SitePage;?>
 @extends('layouts.administrator') 
 
 
@@ -13,8 +11,6 @@ use App\Models\SitePage;?>
 
 <div class="row companysettings">
    @include('elements.administrator.settings_layout')
-
-     <?php $sitepages = SitePage::all();?>
       <div class="col-md-10 col-sm-10 col-xs-10">
             <div class="row">
                 <div class="col-md-12">
@@ -32,12 +28,19 @@ use App\Models\SitePage;?>
                                       <div class="btn-group">
                                             {{--  <a href="{{ route('sitepage_form') }}" class="btn green">Add New<i class="fa fa-plus"></i></a>  --}}
 
-                                            {{--  <a class="btn default" id="ajax-demo" data-toggle="modal">
-                                            View Demo</a>  --}}
+                                            {{--  <a class="btn default" id="editMenues-xx" data-toggle="modal">
+                                            View Demo</a>
+
+                                            <a class="btn default" id="ajax-demo" data-toggle="modal">
+                                                View Demo ajax</a>  --}}
                                             <a class="btn green" data-toggle="modal" href="#add_menue">
                                                 Add New<i class="fa fa-plus"></i> </a>
+                                            <div id="editMenues" class="modal fade" tabindex="-1">
+                                            </div>
+                                            
                                             <div id="ajax-modal" class="modal fade" tabindex="-1">
                                             </div>
+
                                         </div>
                                     </div>
                                     {{--  <div class="col-md-6">
@@ -62,29 +65,20 @@ use App\Models\SitePage;?>
                                     </div>  --}}
                                 </div>
                             </div>
-                            @if(Session::has('success'))
-                                <div class="alert alert-success">
-                                <button class="close" data-close="alert"></button>
-                                    {{ Session::get('success') }}
-                                    @php
-                                    Session::forget('success');
-                                    @endphp
-                                </div>
-                            @endif
-                            
-
+                            @include('elements.administrator.notigication')
                             <!-- responsive -->
 							<div id="add_menue" class="modal fade" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
 								<div class="modal-header">
 									<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
 									<h4 class="modal-title">Add New Menu</h4>
-								</div>
+                                </div>
+                                <form action="" class="form-horizontal" role="form" method="POST" name="add_menu" id="add_menu">
+                                        {{ csrf_field() }}
 								<div class="modal-body">
-                                        <form action="#" class="form-horizontal" role="form">
-
-
+                                        
                                                 <div class="form-group">
-                                                        <label class="control-label col-md-4">Menu name</label>
+                                                        <label class="control-label col-md-4">Menu name <span class="required">
+                                                                * </span></label>
                                                         <div class="col-md-8">
                                                                 <input name="menue_name" class="form-control" type="text">
                                                         </div>
@@ -93,31 +87,34 @@ use App\Models\SitePage;?>
                                                             <label class="control-label col-md-4">Parent Menue</label>
                                                             <div class="col-md-8">
                                                                     <select name="parent" class="form-control select2">
-                                                                            <option value=""></option>
-                                                                            <option value=""></option>
-                                                                            <option value=""></option>
+                                                                            <option value="0"><strong>Self</strong></option>
+                                                                            {{--  {!!html_entity_decode((new App\Healpers\General)->build_option($sitemenues))!!}  --}}
+                                                                            @foreach ($sitemenues as $sitemenu)   
+                                                                            <option value="{{$sitemenu->id}}">{{$sitemenu->menue_name}}</option>
+                                                                             @endforeach
                                                                             </select>
                                                             </div>
                                                         </div>
                                                         
                                                         <div class="form-group">
-                                                                <label class="control-label col-md-4">Menu Type</label>
+                                                                <label class="control-label col-md-4">Link To</label>
                                                                 <div class="col-md-8">
-                                                                        <select name="menu_type"  class="form-control select2">
-                                                                                <option value="page">Page</option>
-                                                                                <option value="link">Link</option>
+                                                                        <select name="menue_type"  class="form-control select2">
+                                                                                <option value="page">Site Page</option>
+                                                                                <option value="link">External Link</option>
                                                                                 {{--  <option value="content">Content</option>  --}}
                                                                             </select>
                                                                 </div>
                                                             </div>         
 
                                                             <div class="form-group">
-                                                                    <label class="control-label col-md-4">Select Page</label>
+                                                                    <label class="control-label col-md-4">Page</label>
                                                                     <div class="col-md-8">
                                                                             <select name="pages" class="form-control select2" >
-                                                                                    <option value=""></option>
-                                                                                    <option value=""></option>
-                                                                                    <option value=""></option>
+                                                                                <option value="0" selected>--- Select Page ---</option>
+                                                                                @foreach ($sitepages as $sitepage)   
+                                                                                    <option value="{{$sitepage->alia}}">{{$sitepage->title}}</option>
+                                                                                 @endforeach
                                                                                 </select>
                                                                     </div>
                                                                 </div>  
@@ -125,26 +122,44 @@ use App\Models\SitePage;?>
                                                                 <div class="form-group">
                                                                         <label class="control-label col-md-4">Insert Url</label>
                                                                         <div class="col-md-8">
-                                                                                <input class="form-control" type="text">
+                                                                                <input name="link" class="form-control" type="text">
                                                                         </div>
                                                                     </div> 
 
                                             
                                             
 
-                                        </form>
+                                        
 								</div>
 								<div class="modal-footer">
 									<button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
-									<button type="button" class="btn green">Submit</button>
-								</div>
+									<button type="submit" class="btn green">Submit</button>
+                                </div>
+                            </form>
 							</div>
                             <!-- stackable -->
                             
 
                             <div class="portlet-body">
                                 <div class="dd" id="nestable_list_3">
-                                    <ol class="dd-list">
+                                    {{--  {{General::build_menu($sitemenues)}}  --}}
+                                    {{--  {{ (new App\Healpers\General)->build_menu($sitemenues) }}  --}}
+                                    {{--  {!!html_entity_decode((new App\Healpers\General)->build_menu($sitemenues))!!}  --}}
+                                    {!!html_entity_decode($build_menu)!!}
+                                    
+
+                                    {{--  <ol class="dd-list">
+                                            {{--  @foreach ($sitemenues as $sitemenu)
+                                            <li class="dd-item dd3-item" data-id="{{$sitemenu->id}}">
+                                                    <div class="dd-handle dd3-handle">
+                                                    </div>
+                                                    <div class="dd3-content">
+                                                        {{$sitemenu->menue_name}}
+                                                    </div>
+                                                </li>
+                                            @endforeach
+
+
                                         <li class="dd-item dd3-item" data-id="13">
                                             <div class="dd-handle dd3-handle">
                                             </div>
@@ -189,7 +204,7 @@ use App\Models\SitePage;?>
                                                 </li>
                                             </ol>
                                         </li>
-                                    </ol>
+                                    </ol>  --}}
                                 </div>
                             </div>
 
@@ -210,10 +225,29 @@ use App\Models\SitePage;?>
 
 
 <script>
-    jQuery(document).ready(function() {
-        UINestable.init();
-    });
+    // jQuery(document).ready(function() {
+    //     UINestable.init();
+    // });
     UIExtendedModals.init();
+ 
+// $('#editMenues-xx').on('click', function(){
+//   var $modal = $('#editMenues');
+//   // create the backdrop and wait for next modal to be triggered
+//   //$('body').modalmanager('loading');
+//   $modal.load("http://localhost:8010/admin/settings/web/edit-menu/1", '', function(){
+//       $modal.modal();
+//   }, 1000);
+// });
+//route('admin.settings.editMenu', ['id' => 1])
+var $modal = $('#editMenues');
+function edit_menu(id){
+  // create the backdrop and wait for next modal to be triggered
+  //$('body').modalmanager('loading');
+  $modal.load("{{route('admin.settings.editMenu', ['id' => ""])}}/"+id, '', function(){
+      $modal.modal();
+  }, 1000);
+}
+
     </script>
 @endsection
 

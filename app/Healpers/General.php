@@ -20,5 +20,26 @@ class General {
      
         return preg_replace('/-+/', '-', $string); // Replaces multiple hyphens with single one.
      }
+
+     public function  build_option($rows,$parent=0)
+      {  
+        $result = '';
+        foreach ($rows as $row)
+        {
+          if ($row['parent'] == $parent){
+            $result.= "<option>{$row['menue_name']}";
+            if ($this->has_children($rows,$row['id']))
+              $result.= $this->build_menu($rows,$row['id']);
+            $result.= "</option>";
+          }
+        }
+        $result.= '';
+        return $result;
+      }
+
+
+      
+      
+      
 }
 ?>

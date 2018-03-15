@@ -63,6 +63,13 @@ Route::get('/admin/settings/web/deletepage/{id}', 'Admin\settings\WebSettingCont
 
 Route::get('/admin/settings/web/site-menues', 'Admin\settings\WebSettingController@siteMenues')->name('admin.settings.sitemenues');
 
+Route::post('/admin/settings/web/site-menues', 'Admin\settings\WebSettingController@addMenues');
+
+Route::get('/admin/settings/web/edit-menu/{id}', 'Admin\settings\WebSettingController@editMenu')->name('admin.settings.editMenu');
+
+Route::post('/admin/settings/web/edit-menu/{id}', 'Admin\settings\WebSettingController@updateMenu');
+Route::get('/admin/settings/web/delete-menu/{id}', 'Admin\settings\WebSettingController@deleteMenu')->name('admin.settings.deleteMenu');
+
 
 Route::get('/admin/settings/sms', function () {
     echo "comming soon";
