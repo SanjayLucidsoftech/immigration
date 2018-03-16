@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+//import {BrowserRouter, Route, Link } from "react-router-dom";
 import axios from 'axios';
 
 export default class Register extends Component {
@@ -28,13 +28,13 @@ export default class Register extends Component {
           })
           .then(response=> {
            this.setState({err: false});
-           this.props.history.push("/") ;
+           this.props.history.push("register") ;
           }).catch(error=> {
             this.refs.first_name.value="";
             this.refs.last_name.value="";
             this.refs.password.value="";
             this.refs.email.value="";
-            this.refs.confirm.value="";
+            this.refs.password_confirmation.value="";
             this.refs.user_type.value="";
             this.setState({err: true});
           });
@@ -72,7 +72,7 @@ export default class Register extends Component {
                 <div className="col-md-9 col-sm-9">
                   <h1>Create an account</h1>
                   <div className="content-form-page">
-                  {error != undefined && <div className={name} role="alert">{msg}</div>}
+                 {error != undefined && <div className={name} role="alert">{msg}</div>}
                     <div className="row">
                       <div className="col-md-7 col-sm-7">
                         <form className="form-horizontal" role="form" method="POST" onSubmit= {this.onSubmit.bind(this)}>

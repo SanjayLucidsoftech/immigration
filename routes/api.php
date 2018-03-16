@@ -17,5 +17,6 @@ use Illuminate\Http\Request;
     return $request->user();
 });*/
 
-Route::post('register','Auth\RegisterController@register');
+Route::post('register','Api\Auth\RegisterController@register');
+Route::post('login','Api\Auth\LoginController@login');
      

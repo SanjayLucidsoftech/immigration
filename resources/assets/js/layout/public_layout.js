@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router , Switch ,Route, Link } from "react-router-dom";
-import { BrowserRouter } from 'react-router-dom'
+import {BrowserRouter,Route, Link } from "react-router-dom";
+//import { BrowserRouter } from 'react-router-dom'
 
 import PreHeader from '../components/public/pre_header';
 import Header from '../components/public/header';
@@ -12,25 +12,25 @@ import Footer from '../components/public/footer';
 
 import Login from '../components/public/login';
 import Register from '../components/public/register';
+import Dashboard from '../components/public/dashboard';
 
 
 
 class Main extends Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter>
       <div>
          <PreHeader />
         <Header />
-       <Switch>
           <Route exact path='/' component={Content} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
-          </Switch>
+          <Route path='/dashboard' component={Dashboard} />
           <PreFooter />
         <Footer />
       </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
