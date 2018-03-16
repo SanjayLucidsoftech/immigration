@@ -1,6 +1,70 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+//import  TopMenus from './top_menus'
+var axios = require('axios');
+
+
+
+
 export default class Header extends Component {
+
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this)
+    this.state = {
+      menue_list: '',
+      menus: [],
+    }
+  }
+  
+  handleClick () {
+    
+    axios.get(`http://localhost:8010/api/guest/page/1`)
+      .then(res => {
+        //alert(res.data);
+        //const posts = res.data.map(obj => [obj.id, obj.menue_type, obj.menue_name, obj.parent, obj.link]);
+        const menue_list = res.data.map(obj => 
+          <li className="dropdown" key={obj.id} onClick={this.handleClick}>
+              <a className="dropdown-toggle" data-toggle="dropdown"  href="#">
+              {obj.menue_name}
+              </a>
+          </li>
+        );
+        const menus = res.data.map(obj => [obj]);
+        //alert(menue_name);
+        //alert(menus);
+      //   foreach(menus => menu){
+      //    document.getElementById('nenus').innerHTML="test html here...."+menus;
+      // }
+        this.setState({ menue_list:menue_list,menus:menus });
+      });
+
+
+  }
+
+  componentDidMount() {
+    axios.get(`http://localhost:8010/api/guest/menu`)
+      .then(res => {
+        //alert(res.data);
+        //const posts = res.data.map(obj => [obj.id, obj.menue_type, obj.menue_name, obj.parent, obj.link]);
+        const menue_list = res.data.map(obj => 
+          <li className="dropdown" key={obj.id}>
+              <Link className="dropdown-toggle" data-toggle="dropdown"  to="/page">
+              {obj.menue_name}
+              </Link>
+          </li>
+        );
+        const menus = res.data.map(obj => [obj]);
+        //alert(menue_name);
+        //alert(menus);
+      //   foreach(menus => menu){
+      //    document.getElementById('nenus').innerHTML="test html here...."+menus;
+      // }
+        this.setState({ menue_list:menue_list,menus:menus });
+      });
+  }
+
+
     render() {
         return (
             <div className="header">
@@ -12,7 +76,11 @@ export default class Header extends Component {
         {/*  BEGIN NAVIGATION  */}
         <div className="header-navigation pull-right font-transform-inherit">
           <ul>
-            <li className="dropdown">
+          {/* {this.state.menus.map(menus =>
+            <TopMenus key={menus.id} data={menus}/>
+          )} */}
+            {this.state.menue_list}
+            {/* <li className="dropdown" onClick={this.handleClick}>
               <a className="dropdown-toggle" data-toggle="dropdown"  href="#">
                 Home
               </a>
@@ -159,7 +227,7 @@ export default class Header extends Component {
 
             <li><a href="shop-index.html" target="_blank">E-Commerce</a></li>
             <li><a href="onepage-index.html" target="_blank">One Page</a></li>
-            <li><a href="http://keenthemes.com/preview/metronic/theme/templates/admin" target="_blank">Admin theme</a></li>
+            <li><a href="http://keenthemes.com/preview/metronic/theme/templates/admin" target="_blank">Admin theme</a></li> */}
 
             {/*  BEGIN TOP SEARCH  */}
             <li className="menu-search">

@@ -18,4 +18,6 @@ use Illuminate\Http\Request;
 });*/
 
 Route::post('register','Auth\RegisterController@register');
-     
+
+Route::get('/guest/menu', 'Api\Common\SiteLayoutController@menu');
+Route::get('/guest/page/{id}', 'Api\Common\SiteLayoutController@page');

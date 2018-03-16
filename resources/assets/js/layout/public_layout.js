@@ -12,7 +12,7 @@ import Footer from '../components/public/footer';
 
 import Login from '../components/public/login';
 import Register from '../components/public/register';
-
+import Page from '../components/public/page';
 
 
 class Main extends Component {
@@ -26,6 +26,8 @@ class Main extends Component {
           <Route exact path='/' component={Content} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
+          <Route path='/page' component={Page} />
+
           </Switch>
           <PreFooter />
         <Footer />
