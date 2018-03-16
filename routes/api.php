@@ -21,3 +21,6 @@ Route::post('register','Auth\RegisterController@register');
 
 Route::get('/guest/menu', 'Api\Common\SiteLayoutController@menu');
 Route::get('/guest/page/{id}', 'Api\Common\SiteLayoutController@page');
+Route::post('register','Api\Auth\RegisterController@register');
+Route::post('login','Api\Auth\LoginController@login');
+     
