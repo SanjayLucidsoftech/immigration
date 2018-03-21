@@ -10,21 +10,21 @@ export default class Register extends Component {
             last_name: '',
             email : '',
             password: '',
-            password_confirmation: '',
-            user_type: '',
+            c_password: '',
+            type_id: '',
             
         }
      }
      onSubmit(e){
         e.preventDefault();
-        const {first_name,last_name,email,password,password_confirmation,user_type} = this.state ;
+        const {first_name,last_name,email,password,c_password,type_id} = this.state ;
         axios.post('api/register', {
             first_name,
             last_name,
             email,
             password,
-            password_confirmation,
-            user_type
+            c_password,
+            type_id
           })
           .then(response=> {
            this.setState({err: false});
@@ -34,8 +34,8 @@ export default class Register extends Component {
             this.refs.last_name.value="";
             this.refs.password.value="";
             this.refs.email.value="";
-            this.refs.password_confirmation.value="";
-            this.refs.user_type.value="";
+            this.refs.c_password.value="";
+            this.refs.type_id.value="";
             this.setState({err: true});
           });
      }
@@ -108,7 +108,7 @@ export default class Register extends Component {
                             <div className="form-group">
                               <label for="confirm-password" className="col-lg-4 control-label">Confirm password <span className="require">*</span></label>
                               <div className="col-lg-8">
-                                <input type="text" className="form-control" id="confirm-password" ref="password_confirmation" name="password_confirmation" onChange={this.onChange.bind(this)} />
+                                <input type="text" className="form-control" id="confirm-password" ref="c_password" name="c_password" onChange={this.onChange.bind(this)} />
                               </div>
                             </div>
                           </fieldset>
@@ -117,7 +117,7 @@ export default class Register extends Component {
                             <div className="form-group">
                               <label for="type" className="col-lg-4 control-label">User type <span className="require">*</span></label>
                               <div className="col-lg-8" >
-                                 <select id = "dropdown" className="form-control" ref="user_type" name="user_type" onChange={this.onChange.bind(this)}>
+                                 <select id = "dropdown" className="form-control" ref="type_id" name="type_id" onChange={this.onChange.bind(this)}>
                                     <option value="">Please select</option>
                                     <option value="1">Customer</option>
                                     <option value="2">Migration Agent</option>
