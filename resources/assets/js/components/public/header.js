@@ -6,70 +6,186 @@ var axios = require('axios');
 
 
 
-export default class Header extends Component {
+  
 
+
+export default class Header extends Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this)
     this.state = {
       menue_list: '',
       menus: [],
     }
   }
+
+has_children(nums ,id) {
   
-  handleClick () {
+  nums.forEach(function(val,index) { 
+    //console.log(val['parent']+">>>>>"+id);
+   let sub_menue;
+    if (val['parent'] != 0){
+      //console.log(val['parent']+">>>>>"+id);
+      sub_menue = <li className="submenue" key={val['id']}>
+          <Link className="dropdown-toggle"  to={"/page/"+val['link']} >
+          {val['menue_name']}
+          </Link>
+    </li>
+     // return this.build_menu(nums ,id);
     
-    axios.get(`http://localhost:8010/api/guest/page/1`)
-      .then(res => {
-        //alert(res.data);
-        //const posts = res.data.map(obj => [obj.id, obj.menue_type, obj.menue_name, obj.parent, obj.link]);
-        const menue_list = res.data.map(obj => 
-          <li className="dropdown" key={obj.id} onClick={this.handleClick}>
-              <a className="dropdown-toggle" data-toggle="dropdown"  href="#">
-              {obj.menue_name}
-              </a>
-          </li>
-        );
-        const menus = res.data.map(obj => [obj]);
-        //alert(menue_name);
-        //alert(menus);
-      //   foreach(menus => menu){
-      //    document.getElementById('nenus').innerHTML="test html here...."+menus;
-      // }
-        this.setState({ menue_list:menue_list,menus:menus });
-      });
-
-
+    }else{
+      sub_menue = '';}
+    return sub_menue;
+ }) 
   }
+  build_menu(rows,parent=0)
+  {
+    menue_list = rows.map(function(obj, i) {
+      var menu_data="";
+     
+      if(obj.id==parent){
+      menu_data = <li className="dropdown" key={obj.id}>          
+                <Link className="dropdown-toggle"  to={"/page/"+obj.link} >
+                {obj.menue_name}
+                </Link>
+                {this.build_menu( [obj], obj.id )}
+                </li> }          
+  }.bind(this));
+
+    return menue_list;
+    //console.log(menue_list);
+  }
+
+  getMenu( rows, parentID=0 ){
+    data=rows;
+    return data.filter(function(node){ return ( node.parent_id === parentID ) ; }).map(function(node){
+        var exists = data.some(function(childNode){  return childNode.parent_id === node.id; });
+        var subMenu = (exists) ? '<ul>'+ getMenu(node.id).join('') + '</ul>' : "";
+        return '<li>'+node.name +  subMenu + '</li>' ;
+    });
+}
+
 
   componentDidMount() {
     axios.get(`http://localhost:8010/api/guest/menu`)
       .then(res => {
-        //alert(res.data);
-        //const posts = res.data.map(obj => [obj.id, obj.menue_type, obj.menue_name, obj.parent, obj.link]);
-        const menue_list = res.data.map(obj => 
-          <li className="dropdown" key={obj.id}>
-              <Link className="dropdown-toggle" data-toggle="dropdown"  to="/page">
-              {obj.menue_name}
-              </Link>
-          </li>
-        );
-        const menus = res.data.map(obj => [obj]);
-        //alert(menue_name);
-        //alert(menus);
-      //   foreach(menus => menu){
-      //    document.getElementById('nenus').innerHTML="test html here...."+menus;
-      // }
-        this.setState({ menue_list:menue_list,menus:menus });
+      //   const menue_list = res.data.map(function(obj, i) {
+      //     var menu_data="";
+      //    return  menu_data = <li className="dropdown" key={obj.id}>          
+      //               <Link className="dropdown-toggle"  to={"/page/"+obj.link} >
+      //               {obj.menue_name}
+      //               </Link>
+      //               {this.has_children( [obj], obj.id )}
+      //               </li>           
+      // }.bind(this));
+      var menus_obj=res.data;
+      const menus_example = [{
+        id: 1,
+        name: "Managing Director",
+        children: [
+          {
+            id: 2,
+            name: "Sales Director"      
+          }, {
+            id: 3,
+            name: "IT Director",
+            children: [
+              {
+                id: 4,
+                name: "Technical Lead",
+                children: [
+                  {
+                    id: 5,
+                    name: "Software Developer"
+                  },
+                  {
+                    id: 6,
+                    name: "Support Technician"
+                  }
+                ]
+              }        
+            ]
+          }, {
+            id: 7,
+            name: "HR Department",
+            children: [
+              {
+                id: 8,
+                name: "HR Officer",
+                children: [{
+                  id: 9,
+                  name: "HR Assistant 1"
+                }, {
+                  id: 10,
+                  name: "HR Assistant 2"
+                }]
+              }
+            ]
+          }
+        ]
+      },{id: 12,
+      name: "test main"}];
+      
+      console.log(menus_example);
+
+      var newArr = Object.keys(menus_obj);
+      var menus = newArr.map(function(i) {
+        
+        return menus_obj[i];
+
+      });
+      
+      console.log(menus);
+
+      // const menus = res.data.map(obj => [obj]);
+     // const menus = res.data;
+
+     // console.log(Array.from([menus]));
+     // menus=Array.from([menus])
+      this.setState({menus: menus});
+
+      
+      //const menus = res.data.map(obj => [obj]);
+      console.log(this.state.menus);
+
+
       });
   }
 
+  
 
     render() {
+      let nodes = this.state.menus.map(function(menu) {
+        let target='';
+        if(menu.menue_type=='link' && menu.link!="#")
+          target="_blank";
+        else
+          target="";
+
+        if(menu.parent==0){
+        let children=[];
+        if(menu.children){
+        let newArr = Object.keys(menu.children);
+       children = newArr.map(function(i) {
+          return menu.children[i];
+        });
+      }
+
+        return (
+           <Node node={menu} children={children} target={target} key={menu.id} />
+          //{menu}
+        );
+      }
+    }
+    
+    ); 
+
         return (
             <div className="header">
       <div className="container">
-        <Link  to="/" className="site-logo"><img src="./sb_theme/assets/frontend/layout/img/logos/logo-corp-red.png" alt="Metronic FrontEnd"/></Link>
+        <Link  to="/" className="site-logo">
+        {/* <img src="./sb_theme/assets/frontend/layout/img/logos/logo-corp-red.png" alt="Metronic FrontEnd"/> */}
+        Immigration.Com
+        </Link>
 
         <a href="javascript:void(0);" className="mobi-toggler"><i className="fa fa-bars"></i></a>
 
@@ -79,7 +195,15 @@ export default class Header extends Component {
           {/* {this.state.menus.map(menus =>
             <TopMenus key={menus.id} data={menus}/>
           )} */}
-            {this.state.menue_list}
+         {/* {this.state.menus} */}
+         
+         <li onClick={this.handleClick}>
+              <Link   to="/">
+                Home
+              </Link>
+            </li>
+{nodes}
+
             {/* <li className="dropdown" onClick={this.handleClick}>
               <a className="dropdown-toggle" data-toggle="dropdown"  href="#">
                 Home
@@ -252,4 +376,38 @@ export default class Header extends Component {
     </div>
         )
     }
+}
+
+class Node extends React.Component {
+
+  render() {      
+
+    let childnodes = null;
+    // the Node component calls itself if there are children
+    if(this.props.children) { 
+      let target='';     
+      childnodes = this.props.children.map(function(childnode) {
+       
+        if(childnode.menue_type =='link' && childnode.link!="#")
+          target="_blank";
+        else
+          target="";
+
+       return (
+         <Node node={childnode} children={childnode.children} target={target} key={childnode.id}/>
+       );
+     });
+    }
+
+    // return our list element
+    // display children if there are any
+    return (
+      <li key={this.props.node.id}>      
+        <Link to={this.props.node.link} target={this.props.target}>{this.props.node.name}</Link>
+        { childnodes ?
+          <ul className="dropdown-menu">{childnodes}</ul>
+        : null }
+      </li>
+    );
+  }
 }

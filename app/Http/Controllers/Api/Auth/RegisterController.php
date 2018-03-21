@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers\Api\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -55,6 +56,12 @@ class RegisterController extends Controller
         ]);
     }
 
+    protected function registered(Request $request, $user)
+    {
+
+    return response()->json(['data' => $user->toArray()], 201);
+    }
+
     /**
      * Create a new user instance after a valid registration.
      *
@@ -68,7 +75,7 @@ class RegisterController extends Controller
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
             'email' => $data['email'],
-            'type_id' => $data['type_id'],
+            'type_id' => $data['user_type'],
             'password' => bcrypt($data['password']),
         ]);
     }
