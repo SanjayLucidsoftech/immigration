@@ -12,7 +12,7 @@ export default class PreHeader extends Component {
                         <div className="col-md-6 col-sm-6 additional-shop-info">
                             <ul className="list-unstyled list-inline">
                                 <li><i className="fa fa-phone"></i><span>+1 456 6717</span></li>
-                                <li><i className="fa fa-envelope-o"></i><span>info@keenthemes.com</span></li>
+                                <li><i className="fa fa-envelope-o"></i><span>info@immigration.com</span></li>
                             </ul>
                         </div>
                         {/* END TOP BAR LEFT PART */}
