@@ -26,6 +26,7 @@ class Main extends Component {
           <Route exact path='/' component={Content} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
+          <Route path='/page' component={Page} />
           <Route path='/page/:alia' component={Page} />
           <Route path='/dashboard' component={Dashboard} />
           <PreFooter />
