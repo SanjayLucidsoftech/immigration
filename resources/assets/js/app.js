@@ -14,4 +14,43 @@ require('./bootstrap');
  */
 
 //require('./components/Example');
-require('./layout/public_layout');
+
+
+
+
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import PublicLayout from './layout/public_layout'
+import PrivateLayout from './layout/private_layout'
+
+
+
+
+class Main extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          isLoggedIn: true,
+        }
+      }
+
+    render() {
+        const isLoggedIn = this.state.isLoggedIn;
+
+      return (
+          <div>
+            {isLoggedIn ? (
+            <PrivateLayout  />
+          ) : (
+            <PublicLayout />
+          )}
+          </div>
+      );
+    }
+  }
+
+if (document.getElementById('root')) {
+    ReactDOM.render(<Main />, document.getElementById('root'));
+  }
+
+//require('./layout/public_layout');
