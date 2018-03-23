@@ -46,7 +46,7 @@ class PassportController extends Controller
         if ($validator->fails()) {
             return response()->json(['error'=>$validator->errors()], 401);            
         }
-
+        else{
         $input = $request->all();
         $input['password'] = bcrypt($input['password']);
         $user = User::create($input);
@@ -55,6 +55,8 @@ class PassportController extends Controller
 
         return response()->json(['success'=>$success], $this->successStatus);
     }
+    }
+
 
     /**
      * details api
