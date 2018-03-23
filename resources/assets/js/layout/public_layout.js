@@ -16,7 +16,7 @@ import Dashboard from '../components/public/dashboard';
 
 
 
-class Main extends Component {
+export default class PublicLayout extends Component {
   render() {
     return (
       <BrowserRouter>
@@ -28,7 +28,6 @@ class Main extends Component {
           <Route path='/register' component={Register} />
           <Route path='/page' component={Page} />
           <Route path='/page/:alia' component={Page} />
-          <Route path='/dashboard' component={Dashboard} />
           <PreFooter />
         <Footer />
       </div>
@@ -40,6 +39,3 @@ class Main extends Component {
 
 //export default main;
 
-if (document.getElementById('root')) {
-  ReactDOM.render(<Main />, document.getElementById('root'));
-}
