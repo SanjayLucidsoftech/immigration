@@ -32,7 +32,7 @@ export default class Login extends Component {
         this.setState({err: true});
       });
  }
-
+ 
  setToken(idToken) {
         // Saves user token to localStorage
         localStorage.setItem('id_token', idToken)
