@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 export default class Login extends Component {
 
@@ -31,16 +32,7 @@ export default class Login extends Component {
         this.setState({err: true});
       });
  }
- setToken(idToken) {
-  // Saves user token to localStorage
-  localStorage.setItem('id_token', idToken)
-}
-
-getToken() {
-  // Retrieves the user token from localStorage
-  return localStorage.getItem('id_token')
-}
-
+s
  setToken(idToken) {
         // Saves user token to localStorage
         localStorage.setItem('id_token', idToken)
@@ -100,7 +92,7 @@ getToken() {
 </div>
 <div className="row">
 <div className="col-lg-8 col-md-offset-4 padding-left-0">
-<a href="page-forgotton-password.html">Forget Password?</a>
+<Link to="/forgetpassword">Forget Password?</Link>
 </div>
 </div>
 <div className="row">

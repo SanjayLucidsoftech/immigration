@@ -11,6 +11,7 @@ import Footer from '../components/public/footer';
 
 import Login from '../components/public/login';
 import Register from '../components/public/register';
+import Forgot from '../components/public/forget';
 import Page from '../components/public/page';
 import Dashboard from '../components/public/dashboard';
 
@@ -27,6 +28,7 @@ export default class PublicLayout extends Component {
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
           <Route path='/page' component={Page} />
+          <Route path='/forgetpassword' component={Forgot} />
           <Route path='/page/:alia' component={Page} />
           <PreFooter />
         <Footer />

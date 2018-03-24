@@ -18,7 +18,7 @@ use Illuminate\Http\Request;
 });*/
 
 //Route::post('register','Auth\RegisterController@register');
-
+Auth::routes();
 Route::get('/guest/menu', 'Api\Common\SiteLayoutController@menu');
 Route::get('/guest/page/{id}', 'Api\Common\SiteLayoutController@page');
 /*Route::post('register','Api\Auth\RegisterController@register');
@@ -27,6 +27,9 @@ Route::post('login','Api\Auth\LoginController@login');*/
 
 Route::post('login', 'Api\PassportController@login');
 Route::post('register', 'Api\PassportController@register');
+Route::post('password/email', 'Api\Auth\ForgotPasswordController@getResetToken');
+Route::post('password/reset', 'Auth\ResetPasswordController@reset');
+
 
 Route::group(['middleware' => ['auth:api','cors']], function(){
 	Route::get('get-details', 'Api\PassportController@getDetails');
