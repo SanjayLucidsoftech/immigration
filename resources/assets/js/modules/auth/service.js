@@ -1,4 +1,4 @@
-import Http from '../../utils/Http'
+//import Http from '../../utils/Http'
 import * as authActions from './store/actions'
 import Transformer from '../../utils/Transformer'
 
@@ -7,17 +7,20 @@ import Transformer from '../../utils/Transformer'
  *
  * @returns {function(*)}
  */
-export function fetchUser() {
-  return dispatch => {
-    return Http.get('auth/user')
-      .then(res => {
-        const data = Transformer.fetch(res.data)
-        dispatch(authActions.authUser(data))
-      })
-      .catch(err => {
-        console.log(err)
-      })
-  }
+
+
+
+export function fetchUser() { console.log("in fetch user");
+  // return dispatch => {
+  //   return Http.get('auth/user')
+  //     .then(res => {
+  //       const data = Transformer.fetch(res.data)
+  //       dispatch(authActions.authUser(data))
+  //     })
+  //     .catch(err => {
+  //       console.log(err)
+  //     })
+  // }
 }
 
 /**

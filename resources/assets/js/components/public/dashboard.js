@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
 export default class Dashboard extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props)
   }
   
-  
+  componentDidMount() {
+    this.props.handleLogin();
+  }
 
     render() {
         return (

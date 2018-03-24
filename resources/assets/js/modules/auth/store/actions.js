@@ -15,11 +15,34 @@ import {
   AUTH_USER,
 } from './action-types';
 
+const initialState = {
+  isAuthenticated: false,
+};
+export function authCheck() { 
+  //console.log("auth check");
+  // return {
+  //   type: AUTH_CHECK,
+  // }
+  
+  // state = Object.assign({}, state, {
+  //   isAuthenticated: !!localStorage.getItem('access_token')
+  // })
 
-export function authCheck() {
-  return {
-    type: AUTH_CHECK,
+  // if (state.isAuthenticated) {
+  //   HTTP.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('access_token')}`;
+  // }
+  //return state;
+  //return false;
+  //console.log(localStorage.getItem('id_token'));
+  if(localStorage.getItem('id_token')){
+    console.log("loged in "+localStorage.getItem('id_token'));
+    return true
+  }else{
+    console.log("loged out");
+    return false;
+    
   }
+  
 }
 
 export function authLogin(payload) {
@@ -30,9 +53,13 @@ export function authLogin(payload) {
 }
 
 export function authLogout() {
-  return {
-    type: AUTH_LOGOUT,
-  }
+  console.log("logout call");
+  //localStorage.removeItem('id_token');
+  return true;
+  //localStorage.removeItem('id_token');  
+  // return {
+  //   type: AUTH_LOGOUT,
+  // }
 }
 
 export function authRefreshToken(payload) {

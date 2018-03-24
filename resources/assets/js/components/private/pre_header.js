@@ -1,8 +1,23 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import { authLogout } from '../../modules/auth/store/actions'
 
 
 export default class PreHeader extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            
+        };
+    
+        // This binding is necessary to make `this` work in the callback
+       // this.handleLogout = this.handleLogout.bind(this);
+      }
+
+
+
+      
+ 
     render() {
         return (
             <div className="pre-header">
@@ -19,8 +34,8 @@ export default class PreHeader extends Component {
                         {/* BEGIN TOP BAR MENU */}
                         <div className="col-md-6 col-sm-6 additional-nav">
                             <ul className="list-unstyled list-inline pull-right">
-                                <li><Link to="/login">Log out</Link></li>
-                                <li><Link to="/register">Welcome: Sanjay Pal</Link></li>
+                                <li><Link to="/login" onClick={this.props.handleLogout}>Log out</Link></li>
+                                <li><Link to="/register">Welcome: Loged In user..</Link></li>
                             </ul>
                         </div>
                         

@@ -17,6 +17,10 @@ import Dashboard from '../components/public/dashboard';
 
 
 export default class PublicLayout extends Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     return (
       <BrowserRouter>
@@ -25,7 +29,11 @@ export default class PublicLayout extends Component {
         <Header />
           <Route exact path='/' component={Content} />
           <Route path='/login' component={Login} />
-          <Route path='/register' component={Register} />
+          <Route path='/dashboard'
+                render={props => <Dashboard handleLogin={this.props.handleLogin} /> }
+                />
+          {/* <Route path='/dashboard' component={Dashboard} /> */}
+          <Route path='/register' component={Register}  />
           <Route path='/page' component={Page} />
           <Route path='/page/:alia' component={Page} />
           <PreFooter />

@@ -10,11 +10,16 @@ import Footer from '../components/private/footer';
 import Dashboard from '../components/private/dashboard';
 
 export default class PublicLayout extends Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     return (
       <BrowserRouter>
       <div>
-         <PreHeader />
+      
+         <PreHeader handleLogout = {this.props.handleLogout} />
         <Header />
           <Route path='/dashboard' component={Dashboard} />
           <PreFooter />

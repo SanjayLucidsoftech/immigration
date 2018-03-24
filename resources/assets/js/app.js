@@ -23,6 +23,8 @@ import ReactDOM from 'react-dom';
 import PublicLayout from './layout/public_layout'
 import PrivateLayout from './layout/private_layout'
 
+import { authCheck } from './modules/auth/store/actions'
+
 
 
 
@@ -30,19 +32,50 @@ class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          isLoggedIn: true,
-        }
+                    isLoggedIn: true,
+                  };
+        this.handleLogin = this.handleLogin.bind(this);
+        this.handleLogout = this.handleLogout.bind(this);
       }
 
-    render() {
-        const isLoggedIn = this.state.isLoggedIn;
 
+      handleClick() {
+        console.log("Log");
+      }
+
+
+      handleLogout(e){
+        //e.preventDefault();
+        //console.log("logout call....."+localStorage.removeItem('id_token'));
+         //authLogout();
+         localStorage.removeItem('id_token');
+         this.setState({
+          isLoggedIn: false,
+        })
+        //this.props.history.push("login") ;
+      }
+
+      handleLogin(e){
+        console.log("logoin call.....");
+         this.setState({
+          isLoggedIn: true,
+        })
+      }
+
+      componentWillMount() {
+        this.state.isLoggedIn = authCheck();
+      }
+
+
+      
+    render() {
+        
       return (
           <div>
-            {isLoggedIn ? (
-            <PrivateLayout  />
+            {this.state.isLoggedIn ? (
+            <PrivateLayout handleLogout = {this.handleLogout} />
           ) : (
-            <PublicLayout />
+            <PublicLayout handleLogin = {this.handleLogin} />
           )}
           </div>
       );

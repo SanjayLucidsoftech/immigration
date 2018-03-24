@@ -19,11 +19,12 @@ export default class Login extends Component {
         password
       })
       .then(response=> {
-        console.log(response.data.success.token);
-        
+        //console.log(response.data.success.token);
         this.setState({err: false});
         this.setToken(response.data.success.token);
+        //this.props.handleLogin();
         this.props.history.push("dashboard") ;
+        
       })
       .catch(error=> {
         this.refs.email.value="";
@@ -31,15 +32,6 @@ export default class Login extends Component {
         this.setState({err: true});
       });
  }
- setToken(idToken) {
-  // Saves user token to localStorage
-  localStorage.setItem('id_token', idToken)
-}
-
-getToken() {
-  // Retrieves the user token from localStorage
-  return localStorage.getItem('id_token')
-}
 
  setToken(idToken) {
         // Saves user token to localStorage
